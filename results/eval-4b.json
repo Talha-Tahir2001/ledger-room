@@ -1,0 +1,2781 @@
+{
+  "arm": "gemma3:4b",
+  "schemaHash": "ad55b868",
+  "startedAt": "2026-10-18T20:25:08.417Z",
+  "finishedAt": "2026-10-18T20:25:08.509Z",
+  "cacheHits": 20,
+  "headline": {
+    "n": 19,
+    "fieldAccuracy": 0.662303664921466,
+    "scalarAccuracy": 0.7421052631578947,
+    "exactRecordRate": 0.05263157894736842,
+    "perFieldAccuracy": {
+      "vendor": 0.9473684210526315,
+      "invoiceNo": 0.6842105263157895,
+      "issueDate": 0.8947368421052632,
+      "dueDate": 0.8947368421052632,
+      "currency": 0.7894736842105263,
+      "subtotal": 0.7368421052631579,
+      "tax": 1,
+      "total": 0.8421052631578947,
+      "category": 0.15789473684210525,
+      "billable": 0.47368421052631576
+    },
+    "lineItemAccuracy": 0.5833333333333334,
+    "lineItemSpurious": 0,
+    "populatedRecall": 0.8089171974522293,
+    "p50LatencyMs": 57007,
+    "p95LatencyMs": 103534,
+    "meanLatencyMs": 59305.52631578947,
+    "documentsPerHour": 60.70260604097426,
+    "tokensInMean": 340.6842105263158,
+    "tokensOutMean": 238.1578947368421,
+    "repairs": 0,
+    "costUsd": 0
+  },
+  "allScored": {
+    "n": 20,
+    "fieldAccuracy": 0.6633663366336634,
+    "scalarAccuracy": 0.75,
+    "exactRecordRate": 0.05,
+    "perFieldAccuracy": {
+      "vendor": 0.95,
+      "invoiceNo": 0.7,
+      "issueDate": 0.9,
+      "dueDate": 0.9,
+      "currency": 0.8,
+      "subtotal": 0.75,
+      "tax": 1,
+      "total": 0.85,
+      "category": 0.15,
+      "billable": 0.5
+    },
+    "lineItemAccuracy": 0.5784313725490197,
+    "lineItemSpurious": 0,
+    "populatedRecall": 0.8192771084337349,
+    "p50LatencyMs": 57007,
+    "p95LatencyMs": 88271,
+    "meanLatencyMs": 60292.5,
+    "documentsPerHour": 59.70891901977858,
+    "tokensInMean": 340.4,
+    "tokensOutMean": 240.9,
+    "repairs": 0,
+    "costUsd": 0
+  },
+  "excludingAmbiguous": 1,
+  "exclusions": [],
+  "byMedium": {
+    "text-layer": {
+      "n": 16,
+      "fieldAccuracy": 0.6962025316455697,
+      "scalarAccuracy": 0.75625,
+      "exactRecordRate": 0.0625,
+      "perFieldAccuracy": {
+        "vendor": 0.9375,
+        "invoiceNo": 0.6875,
+        "issueDate": 0.875,
+        "dueDate": 0.9375,
+        "currency": 0.8125,
+        "subtotal": 0.8125,
+        "tax": 1,
+        "total": 0.875,
+        "category": 0.125,
+        "billable": 0.5
+      },
+      "lineItemAccuracy": 0.6346153846153846,
+      "lineItemSpurious": 0,
+      "populatedRecall": 0.835820895522388,
+      "p50LatencyMs": 55529,
+      "p95LatencyMs": 103534,
+      "meanLatencyMs": 61344.8125,
+      "documentsPerHour": 58.684668732176824,
+      "tokensInMean": 340.8125,
+      "tokensOutMean": 240.0625,
+      "repairs": 0,
+      "costUsd": 0
+    },
+    "image-only": {
+      "n": 4,
+      "fieldAccuracy": 0.5454545454545454,
+      "scalarAccuracy": 0.725,
+      "exactRecordRate": 0,
+      "perFieldAccuracy": {
+        "vendor": 1,
+        "invoiceNo": 0.75,
+        "issueDate": 1,
+        "dueDate": 0.75,
+        "currency": 0.75,
+        "subtotal": 0.5,
+        "tax": 1,
+        "total": 0.75,
+        "category": 0.25,
+        "billable": 0.5
+      },
+      "lineItemAccuracy": 0.3958333333333333,
+      "lineItemSpurious": 0,
+      "populatedRecall": 0.75,
+      "p50LatencyMs": 57007,
+      "p95LatencyMs": 67912,
+      "meanLatencyMs": 56083.25,
+      "documentsPerHour": 64.19028854426233,
+      "tokensInMean": 338.75,
+      "tokensOutMean": 244.25,
+      "repairs": 0,
+      "costUsd": 0
+    }
+  },
+  "ambiguousFixtures": {
+    "n": 1,
+    "fieldAccuracy": 0.6818181818181818,
+    "scalarAccuracy": 0.9,
+    "exactRecordRate": 0,
+    "perFieldAccuracy": {
+      "vendor": 1,
+      "invoiceNo": 1,
+      "issueDate": 1,
+      "dueDate": 1,
+      "currency": 1,
+      "subtotal": 1,
+      "tax": 1,
+      "total": 1,
+      "category": 0,
+      "billable": 1
+    },
+    "lineItemAccuracy": 0.5,
+    "lineItemSpurious": 0,
+    "populatedRecall": 1,
+    "p50LatencyMs": 79045,
+    "p95LatencyMs": 79045,
+    "meanLatencyMs": 79045,
+    "documentsPerHour": 45.5436776519704,
+    "tokensInMean": 335,
+    "tokensOutMean": 293,
+    "repairs": 0,
+    "costUsd": 0
+  },
+  "records": [
+    {
+      "id": "01-saas-team-plan",
+      "name": "SaaS subscription, table layout, USD",
+      "medium": "text-layer",
+      "mess": [],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 415,
+      "tokensOut": 296,
+      "durationMs": 103534,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "NORTHWIND ANALYTICS",
+            "truth": "NORTHWIND ANALYTICS",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": true,
+            "predicted": "NW-2026-0431",
+            "truth": "NW-2026-0431",
+            "correctNull": false,
+            "missed": false
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-03-14",
+            "truth": "2026-03-14",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": "2026-04-13",
+            "truth": "2026-04-13",
+            "correctNull": false,
+            "missed": false
+          },
+          "currency": {
+            "correct": true,
+            "predicted": "USD",
+            "truth": "USD",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": true,
+            "predicted": 720,
+            "truth": 720,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": 61.2,
+            "truth": 61.2,
+            "correctNull": false,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": 781.2,
+            "truth": 781.2,
+            "correctNull": false,
+            "missed": false
+          },
+          "category": {
+            "correct": false,
+            "predicted": "Analytics Pro - Team plan",
+            "truth": "software",
+            "correctNull": false,
+            "missed": false
+          },
+          "billable": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          }
+        },
+        "lineItems": {
+          "correctCells": 12,
+          "totalCells": 12,
+          "matchedItems": 3,
+          "spuriousItems": 0,
+          "missingItems": 0
+        },
+        "scalarCorrect": 9,
+        "cellsCorrect": 21,
+        "cellsTotal": 22,
+        "exact": false,
+        "populatedFields": 9,
+        "populatedRecovered": 9
+      },
+      "predicted": {
+        "vendor": "NORTHWIND ANALYTICS",
+        "invoiceNo": "NW-2026-0431",
+        "issueDate": "2026-03-14",
+        "dueDate": "2026-04-13",
+        "currency": "USD",
+        "subtotal": 720,
+        "tax": 61.2,
+        "total": 781.2,
+        "category": "Analytics Pro - Team plan",
+        "billable": null,
+        "lineItems": [
+          {
+            "description": "Analytics Pro - Team plan",
+            "quantity": 12,
+            "unitPrice": 49,
+            "amount": 588
+          },
+          {
+            "description": "Additional seats",
+            "quantity": 3,
+            "unitPrice": 19,
+            "amount": 57
+          },
+          {
+            "description": "Priority support",
+            "quantity": 1,
+            "unitPrice": 75,
+            "amount": 75
+          }
+        ]
+      }
+    },
+    {
+      "id": "02-restaurant-receipt",
+      "name": "Restaurant receipt, prose totals, no invoice number",
+      "medium": "text-layer",
+      "mess": [
+        "no invoice number"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 337,
+      "tokensOut": 352,
+      "durationMs": 88271,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "THE GREEN KITCHEN",
+            "truth": "THE GREEN KITCHEN",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-03-22",
+            "truth": "2026-03-22",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "currency": {
+            "correct": true,
+            "predicted": "USD",
+            "truth": "USD",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": true,
+            "predicted": 39.25,
+            "truth": 39.25,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": 3.34,
+            "truth": 3.34,
+            "correctNull": false,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": 42.59,
+            "truth": 42.59,
+            "correctNull": false,
+            "missed": false
+          },
+          "category": {
+            "correct": true,
+            "predicted": "Restaurant",
+            "truth": "meals",
+            "correctNull": false,
+            "missed": false
+          },
+          "billable": {
+            "correct": false,
+            "predicted": null,
+            "truth": false,
+            "correctNull": false,
+            "missed": true
+          }
+        },
+        "lineItems": {
+          "correctCells": 13,
+          "totalCells": 20,
+          "matchedItems": 5,
+          "spuriousItems": 0,
+          "missingItems": 0
+        },
+        "scalarCorrect": 9,
+        "cellsCorrect": 22,
+        "cellsTotal": 30,
+        "exact": false,
+        "populatedFields": 8,
+        "populatedRecovered": 7
+      },
+      "predicted": {
+        "vendor": "THE GREEN KITCHEN",
+        "invoiceNo": null,
+        "issueDate": "2026-03-22",
+        "dueDate": null,
+        "currency": "USD",
+        "subtotal": 39.25,
+        "tax": 3.34,
+        "total": 42.59,
+        "category": "Restaurant",
+        "billable": null,
+        "lineItems": [
+          {
+            "description": "Espresso",
+            "quantity": 1,
+            "unitPrice": 3.5,
+            "amount": 3.5
+          },
+          {
+            "description": "House sandwich",
+            "quantity": 2,
+            "unitPrice": 11,
+            "amount": 22
+          },
+          {
+            "description": "Soup of the day",
+            "quantity": 1,
+            "unitPrice": 7.25,
+            "amount": 7.25
+          },
+          {
+            "description": "Sparkling water",
+            "quantity": 3,
+            "unitPrice": 9,
+            "amount": 27
+          },
+          {
+            "description": "Tiramisu",
+            "quantity": 1,
+            "unitPrice": 8.5,
+            "amount": 8.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "03-german-prose-total",
+      "name": "German invoice, decimal commas, EUR",
+      "medium": "text-layer",
+      "mess": [
+        "decimal commas",
+        "thousands separators",
+        "prose totals"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 333,
+      "tokensOut": 201,
+      "durationMs": 53893,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "Ludwig & Sohn GmbH",
+            "truth": "Ludwig & Sohn GmbH",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": true,
+            "predicted": "2026-0455",
+            "truth": "2026-0455",
+            "correctNull": false,
+            "missed": false
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-03-14",
+            "truth": "2026-03-14",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": "2026-04-13",
+            "truth": "2026-04-13",
+            "correctNull": false,
+            "missed": false
+          },
+          "currency": {
+            "correct": true,
+            "predicted": "EUR",
+            "truth": "EUR",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": false,
+            "predicted": 2856,
+            "truth": 2400,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": 456,
+            "truth": 456,
+            "correctNull": false,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": 2856,
+            "truth": 2856,
+            "correctNull": false,
+            "missed": false
+          },
+          "category": {
+            "correct": false,
+            "predicted": "Beratung Design",
+            "truth": "consulting",
+            "correctNull": false,
+            "missed": false
+          },
+          "billable": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          }
+        },
+        "lineItems": {
+          "correctCells": 2,
+          "totalCells": 4,
+          "matchedItems": 1,
+          "spuriousItems": 0,
+          "missingItems": 0
+        },
+        "scalarCorrect": 8,
+        "cellsCorrect": 10,
+        "cellsTotal": 14,
+        "exact": false,
+        "populatedFields": 9,
+        "populatedRecovered": 9
+      },
+      "predicted": {
+        "vendor": "Ludwig & Sohn GmbH",
+        "invoiceNo": "2026-0455",
+        "issueDate": "2026-03-14",
+        "dueDate": "2026-04-13",
+        "currency": "EUR",
+        "subtotal": 2856,
+        "tax": 456,
+        "total": 2856,
+        "category": "Beratung Design",
+        "billable": null,
+        "lineItems": [
+          {
+            "description": "Beratung Design",
+            "quantity": null,
+            "unitPrice": 2400,
+            "amount": 2400
+          }
+        ]
+      }
+    },
+    {
+      "id": "04-hardware-ocr-garbled",
+      "name": "Image-only hardware receipt with OCR garbling",
+      "medium": "image-only",
+      "mess": [
+        "OCR noise",
+        "spaced-out digits",
+        "non-standard total label"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 325,
+      "tokensOut": 275,
+      "durationMs": 57007,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "Pixel Forge Hardware",
+            "truth": "Pixel Forge Hardware",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": true,
+            "predicted": "PF-99-2214",
+            "truth": "PF-99-2214",
+            "correctNull": false,
+            "missed": false
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-02-09",
+            "truth": "2026-02-09",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "currency": {
+            "correct": true,
+            "predicted": "EUR",
+            "truth": "EUR",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": true,
+            "predicted": 728.9,
+            "truth": 728.9,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "total": {
+            "correct": false,
+            "predicted": null,
+            "truth": 728.9,
+            "correctNull": false,
+            "missed": true
+          },
+          "category": {
+            "correct": false,
+            "predicted": null,
+            "truth": "hardware",
+            "correctNull": false,
+            "missed": true
+          },
+          "billable": {
+            "correct": false,
+            "predicted": null,
+            "truth": false,
+            "correctNull": false,
+            "missed": true
+          }
+        },
+        "lineItems": {
+          "correctCells": 5,
+          "totalCells": 12,
+          "matchedItems": 3,
+          "spuriousItems": 0,
+          "missingItems": 0
+        },
+        "scalarCorrect": 7,
+        "cellsCorrect": 12,
+        "cellsTotal": 22,
+        "exact": false,
+        "populatedFields": 8,
+        "populatedRecovered": 5
+      },
+      "predicted": {
+        "vendor": "Pixel Forge Hardware",
+        "invoiceNo": "PF-99-2214",
+        "issueDate": "2026-02-09",
+        "dueDate": null,
+        "currency": "EUR",
+        "subtotal": 728.9,
+        "tax": null,
+        "total": null,
+        "category": null,
+        "billable": null,
+        "lineItems": [
+          {
+            "description": "34\" ultrawide m.on",
+            "quantity": 1,
+            "unitPrice": 549,
+            "amount": 549
+          },
+          {
+            "description": "US B-C dock",
+            "quantity": 1,
+            "unitPrice": 89.95,
+            "amount": 89.95
+          },
+          {
+            "description": "HDMI cab1e",
+            "quantity": 1,
+            "unitPrice": 12.5,
+            "amount": 12.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "05-utility-pkr",
+      "name": "Pakistani electricity bill, PKR, no tax line",
+      "medium": "text-layer",
+      "mess": [
+        "no tax line",
+        "Rs prefix instead of ISO code",
+        "spaces in digits"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 316,
+      "tokensOut": 116,
+      "durationMs": 35648,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "K-ELECTRIC",
+            "truth": "K-ELECTRIC",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": false,
+            "predicted": null,
+            "truth": "4110229837",
+            "correctNull": false,
+            "missed": true
+          },
+          "issueDate": {
+            "correct": false,
+            "predicted": "2026-01-01",
+            "truth": "2026-01-31",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": "2026-02-20",
+            "truth": "2026-02-20",
+            "correctNull": false,
+            "missed": false
+          },
+          "currency": {
+            "correct": false,
+            "predicted": "INR",
+            "truth": "PKR",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": true,
+            "predicted": 21516,
+            "truth": 21516,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "total": {
+            "correct": false,
+            "predicted": null,
+            "truth": 21516,
+            "correctNull": false,
+            "missed": true
+          },
+          "category": {
+            "correct": false,
+            "predicted": "Residential",
+            "truth": "utilities",
+            "correctNull": false,
+            "missed": false
+          },
+          "billable": {
+            "correct": false,
+            "predicted": null,
+            "truth": false,
+            "correctNull": false,
+            "missed": true
+          }
+        },
+        "lineItems": {
+          "correctCells": 0,
+          "totalCells": 0,
+          "matchedItems": 0,
+          "spuriousItems": 0,
+          "missingItems": 0
+        },
+        "scalarCorrect": 4,
+        "cellsCorrect": 4,
+        "cellsTotal": 10,
+        "exact": false,
+        "populatedFields": 9,
+        "populatedRecovered": 6
+      },
+      "predicted": {
+        "vendor": "K-ELECTRIC",
+        "invoiceNo": null,
+        "issueDate": "2026-01-01",
+        "dueDate": "2026-02-20",
+        "currency": "INR",
+        "subtotal": 21516,
+        "tax": null,
+        "total": null,
+        "category": "Residential",
+        "billable": null,
+        "lineItems": []
+      }
+    },
+    {
+      "id": "06-coworking-gbp",
+      "name": "UK coworking membership, GBP, ambiguous date",
+      "medium": "text-layer",
+      "mess": [
+        "ambiguous numeric date"
+      ],
+      "ambiguous": true,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 335,
+      "tokensOut": 293,
+      "durationMs": 79045,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "THE WORKS LONDON",
+            "truth": "THE WORKS LONDON",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": true,
+            "predicted": "TWL-2026-0912",
+            "truth": "TWL-2026-0912",
+            "correctNull": false,
+            "missed": false
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-04-03",
+            "truth": "2026-03-04",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": "2026-05-03",
+            "truth": "2026-05-03",
+            "correctNull": false,
+            "missed": false
+          },
+          "currency": {
+            "correct": true,
+            "predicted": "GBP",
+            "truth": "GBP",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": true,
+            "predicted": 495,
+            "truth": 495,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": 99,
+            "truth": 99,
+            "correctNull": false,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": 594,
+            "truth": 594,
+            "correctNull": false,
+            "missed": false
+          },
+          "category": {
+            "correct": false,
+            "predicted": "Membership Invoice",
+            "truth": "coworking",
+            "correctNull": false,
+            "missed": false
+          },
+          "billable": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          }
+        },
+        "lineItems": {
+          "correctCells": 6,
+          "totalCells": 12,
+          "matchedItems": 3,
+          "spuriousItems": 0,
+          "missingItems": 0
+        },
+        "scalarCorrect": 9,
+        "cellsCorrect": 15,
+        "cellsTotal": 22,
+        "exact": false,
+        "populatedFields": 9,
+        "populatedRecovered": 9
+      },
+      "predicted": {
+        "vendor": "THE WORKS LONDON",
+        "invoiceNo": "TWL-2026-0912",
+        "issueDate": "2026-04-03",
+        "dueDate": "2026-05-03",
+        "currency": "GBP",
+        "subtotal": 495,
+        "tax": 99,
+        "total": 594,
+        "category": "Membership Invoice",
+        "billable": null,
+        "lineItems": [
+          {
+            "description": "Hot desk - April",
+            "quantity": null,
+            "unitPrice": 320,
+            "amount": 320
+          },
+          {
+            "description": "Meeting room credits (10 hrs)",
+            "quantity": null,
+            "unitPrice": 150,
+            "amount": 150
+          },
+          {
+            "description": "Locker rental",
+            "quantity": null,
+            "unitPrice": 25,
+            "amount": 25
+          }
+        ]
+      }
+    },
+    {
+      "id": "07-client-invoice-billable",
+      "name": "Client invoice with explicit billable signal",
+      "medium": "text-layer",
+      "mess": [],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 412,
+      "tokensOut": 312,
+      "durationMs": 82383,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "RIVERA DESIGN STUDIO",
+            "truth": "RIVERA DESIGN STUDIO",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": true,
+            "predicted": "RDS-2026-0118",
+            "truth": "RDS-2026-0118",
+            "correctNull": false,
+            "missed": false
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-01-18",
+            "truth": "2026-01-18",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": "2026-02-17",
+            "truth": "2026-02-17",
+            "correctNull": false,
+            "missed": false
+          },
+          "currency": {
+            "correct": true,
+            "predicted": "USD",
+            "truth": "USD",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": true,
+            "predicted": 5002.5,
+            "truth": 5002.5,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": 500.25,
+            "truth": 500.25,
+            "correctNull": false,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": 5502.75,
+            "truth": 5502.75,
+            "correctNull": false,
+            "missed": false
+          },
+          "category": {
+            "correct": false,
+            "predicted": "Product design retainer",
+            "truth": "consulting",
+            "correctNull": false,
+            "missed": false
+          },
+          "billable": {
+            "correct": true,
+            "predicted": true,
+            "truth": true,
+            "correctNull": false,
+            "missed": false
+          }
+        },
+        "lineItems": {
+          "correctCells": 12,
+          "totalCells": 12,
+          "matchedItems": 3,
+          "spuriousItems": 0,
+          "missingItems": 0
+        },
+        "scalarCorrect": 9,
+        "cellsCorrect": 21,
+        "cellsTotal": 22,
+        "exact": false,
+        "populatedFields": 10,
+        "populatedRecovered": 10
+      },
+      "predicted": {
+        "vendor": "RIVERA DESIGN STUDIO",
+        "invoiceNo": "RDS-2026-0118",
+        "issueDate": "2026-01-18",
+        "dueDate": "2026-02-17",
+        "currency": "USD",
+        "subtotal": 5002.5,
+        "tax": 500.25,
+        "total": 5502.75,
+        "category": "Product design retainer",
+        "billable": true,
+        "lineItems": [
+          {
+            "description": "UX audit and findings",
+            "quantity": 12,
+            "unitPrice": 145,
+            "amount": 1740
+          },
+          {
+            "description": "Design system updates",
+            "quantity": 18.5,
+            "unitPrice": 145,
+            "amount": 2682.5
+          },
+          {
+            "description": "Stakeholder workshop",
+            "quantity": 4,
+            "unitPrice": 145,
+            "amount": 580
+          }
+        ]
+      }
+    },
+    {
+      "id": "08-cloud-hosting-usage",
+      "name": "Cloud hosting with usage-style invoice, USD",
+      "medium": "text-layer",
+      "mess": [
+        "many line items"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 393,
+      "tokensOut": 334,
+      "durationMs": 75776,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "CIRRUS CLOUD",
+            "truth": "CIRRUS CLOUD",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": false,
+            "predicted": null,
+            "truth": "acct_9931kd",
+            "correctNull": false,
+            "missed": true
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-03-01",
+            "truth": "2026-03-01",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "currency": {
+            "correct": true,
+            "predicted": "USD",
+            "truth": "USD",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": true,
+            "predicted": 127.68,
+            "truth": 127.68,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": 10.21,
+            "truth": 10.21,
+            "correctNull": false,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": 137.89,
+            "truth": 137.89,
+            "correctNull": false,
+            "missed": false
+          },
+          "category": {
+            "correct": false,
+            "predicted": "Billing Statement",
+            "truth": "hosting",
+            "correctNull": false,
+            "missed": false
+          },
+          "billable": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          }
+        },
+        "lineItems": {
+          "correctCells": 16,
+          "totalCells": 16,
+          "matchedItems": 4,
+          "spuriousItems": 0,
+          "missingItems": 0
+        },
+        "scalarCorrect": 8,
+        "cellsCorrect": 24,
+        "cellsTotal": 26,
+        "exact": false,
+        "populatedFields": 8,
+        "populatedRecovered": 7
+      },
+      "predicted": {
+        "vendor": "CIRRUS CLOUD",
+        "invoiceNo": null,
+        "issueDate": "2026-03-01",
+        "dueDate": null,
+        "currency": "USD",
+        "subtotal": 127.68,
+        "tax": 10.21,
+        "total": 137.89,
+        "category": "Billing Statement",
+        "billable": null,
+        "lineItems": [
+          {
+            "description": "Compute (vCPU-hours)",
+            "quantity": 720,
+            "unitPrice": 0.0312,
+            "amount": 22.46
+          },
+          {
+            "description": "Object storage (GB-month)",
+            "quantity": 840,
+            "unitPrice": 0.023,
+            "amount": 19.32
+          },
+          {
+            "description": "Egress (GB)",
+            "quantity": 410,
+            "unitPrice": 0.09,
+            "amount": 36.9
+          },
+          {
+            "description": "Managed database (instance-month)",
+            "quantity": 1,
+            "unitPrice": 49,
+            "amount": 49
+          }
+        ]
+      }
+    },
+    {
+      "id": "09-airline-confirmation",
+      "name": "Airline booking confirmation, no tax breakdown",
+      "medium": "text-layer",
+      "mess": [
+        "prose layout",
+        "no subtotal line"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 306,
+      "tokensOut": 107,
+      "durationMs": 30502,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": false,
+            "predicted": null,
+            "truth": "QK7ZP2",
+            "correctNull": false,
+            "missed": true
+          },
+          "issueDate": {
+            "correct": false,
+            "predicted": null,
+            "truth": "2026-04-08",
+            "correctNull": false,
+            "missed": true
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "currency": {
+            "correct": true,
+            "predicted": "GBP",
+            "truth": "GBP",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": true,
+            "predicted": 642,
+            "truth": 642,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": 148.3,
+            "truth": 148.3,
+            "correctNull": false,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": 790.3,
+            "truth": 790.3,
+            "correctNull": false,
+            "missed": false
+          },
+          "category": {
+            "correct": false,
+            "predicted": null,
+            "truth": "travel",
+            "correctNull": false,
+            "missed": true
+          },
+          "billable": {
+            "correct": false,
+            "predicted": null,
+            "truth": false,
+            "correctNull": false,
+            "missed": true
+          }
+        },
+        "lineItems": {
+          "correctCells": 0,
+          "totalCells": 8,
+          "matchedItems": 0,
+          "spuriousItems": 0,
+          "missingItems": 2
+        },
+        "scalarCorrect": 6,
+        "cellsCorrect": 6,
+        "cellsTotal": 18,
+        "exact": false,
+        "populatedFields": 8,
+        "populatedRecovered": 4
+      },
+      "predicted": {
+        "vendor": null,
+        "invoiceNo": null,
+        "issueDate": null,
+        "dueDate": null,
+        "currency": "GBP",
+        "subtotal": 642,
+        "tax": 148.3,
+        "total": 790.3,
+        "category": null,
+        "billable": null,
+        "lineItems": []
+      }
+    },
+    {
+      "id": "10-gym-membership",
+      "name": "Gym membership, minimal fields, no itemisation",
+      "medium": "text-layer",
+      "mess": [
+        "minimal document"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 261,
+      "tokensOut": 160,
+      "durationMs": 35695,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "IRONWORKS GYM",
+            "truth": "IRONWORKS GYM",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": false,
+            "predicted": null,
+            "truth": "IW-4471",
+            "correctNull": false,
+            "missed": true
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-03-01",
+            "truth": "2026-03-01",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": false,
+            "predicted": null,
+            "truth": "2026-04-01",
+            "correctNull": false,
+            "missed": true
+          },
+          "currency": {
+            "correct": true,
+            "predicted": "EUR",
+            "truth": "EUR",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": false,
+            "predicted": 39,
+            "truth": null,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "total": {
+            "correct": false,
+            "predicted": null,
+            "truth": 39,
+            "correctNull": false,
+            "missed": true
+          },
+          "category": {
+            "correct": false,
+            "predicted": "Membership renewal",
+            "truth": "health",
+            "correctNull": false,
+            "missed": false
+          },
+          "billable": {
+            "correct": false,
+            "predicted": null,
+            "truth": false,
+            "correctNull": false,
+            "missed": true
+          }
+        },
+        "lineItems": {
+          "correctCells": 2,
+          "totalCells": 4,
+          "matchedItems": 1,
+          "spuriousItems": 0,
+          "missingItems": 0
+        },
+        "scalarCorrect": 4,
+        "cellsCorrect": 6,
+        "cellsTotal": 14,
+        "exact": false,
+        "populatedFields": 8,
+        "populatedRecovered": 4
+      },
+      "predicted": {
+        "vendor": "IRONWORKS GYM",
+        "invoiceNo": null,
+        "issueDate": "2026-03-01",
+        "dueDate": null,
+        "currency": "EUR",
+        "subtotal": 39,
+        "tax": null,
+        "total": null,
+        "category": "Membership renewal",
+        "billable": null,
+        "lineItems": [
+          {
+            "description": "Monthly membership",
+            "quantity": 1,
+            "unitPrice": 39,
+            "amount": 39
+          }
+        ]
+      }
+    },
+    {
+      "id": "11-legal-retainer",
+      "name": "Legal services invoice, USD, stamp overlap",
+      "medium": "image-only",
+      "mess": [
+        "stamp overlap",
+        "OCR noise",
+        "no due date"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 335,
+      "tokensOut": 260,
+      "durationMs": 66902,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "HARLAN & CO LLP",
+            "truth": "HARLAN & CO LLP",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": true,
+            "predicted": "HC-2026-0219",
+            "truth": "HC-2026-0219",
+            "correctNull": false,
+            "missed": false
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-03-02",
+            "truth": "2026-03-02",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "currency": {
+            "correct": true,
+            "predicted": "USD",
+            "truth": "USD",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": false,
+            "predicted": null,
+            "truth": 2288.5,
+            "correctNull": false,
+            "missed": true
+          },
+          "tax": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": 3188.5,
+            "truth": 3188.5,
+            "correctNull": false,
+            "missed": false
+          },
+          "category": {
+            "correct": false,
+            "predicted": null,
+            "truth": "legal",
+            "correctNull": false,
+            "missed": true
+          },
+          "billable": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          }
+        },
+        "lineItems": {
+          "correctCells": 6,
+          "totalCells": 16,
+          "matchedItems": 3,
+          "spuriousItems": 0,
+          "missingItems": 1
+        },
+        "scalarCorrect": 8,
+        "cellsCorrect": 14,
+        "cellsTotal": 26,
+        "exact": false,
+        "populatedFields": 7,
+        "populatedRecovered": 5
+      },
+      "predicted": {
+        "vendor": "HARLAN & CO LLP",
+        "invoiceNo": "HC-2026-0219",
+        "issueDate": "2026-03-02",
+        "dueDate": null,
+        "currency": "USD",
+        "subtotal": null,
+        "tax": null,
+        "total": 3188.5,
+        "category": null,
+        "billable": null,
+        "lineItems": [
+          {
+            "description": "Contract review, 4 hours",
+            "quantity": null,
+            "unitPrice": null,
+            "amount": 1800
+          },
+          {
+            "description": "Trademark filing (govt. fee)",
+            "quantity": null,
+            "unitPrice": null,
+            "amount": 450
+          },
+          {
+            "description": "Courier",
+            "quantity": null,
+            "unitPrice": 38.5,
+            "amount": 38.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "12-freelance-client-eu",
+      "name": "European client invoice billed in USD, multi-currency",
+      "medium": "text-layer",
+      "mess": [
+        "multi-currency on one document"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 365,
+      "tokensOut": 144,
+      "durationMs": 41483,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": false,
+            "predicted": "MARGUERITE FONTAINE Design Consultancy",
+            "truth": "MARGUERITE FONTAINE",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": true,
+            "predicted": "MF-2026-0088",
+            "truth": "MF-2026-0088",
+            "correctNull": false,
+            "missed": false
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-05-06",
+            "truth": "2026-05-06",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": "2026-06-05",
+            "truth": "2026-06-05",
+            "correctNull": false,
+            "missed": false
+          },
+          "currency": {
+            "correct": false,
+            "predicted": "EUR",
+            "truth": "USD",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": true,
+            "predicted": 3200,
+            "truth": 3200,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": 3478.4,
+            "truth": 3478.4,
+            "correctNull": false,
+            "missed": false
+          },
+          "category": {
+            "correct": false,
+            "predicted": "Fees",
+            "truth": "consulting",
+            "correctNull": false,
+            "missed": false
+          },
+          "billable": {
+            "correct": false,
+            "predicted": null,
+            "truth": true,
+            "correctNull": false,
+            "missed": true
+          }
+        },
+        "lineItems": {
+          "correctCells": 0,
+          "totalCells": 4,
+          "matchedItems": 0,
+          "spuriousItems": 0,
+          "missingItems": 1
+        },
+        "scalarCorrect": 6,
+        "cellsCorrect": 6,
+        "cellsTotal": 14,
+        "exact": false,
+        "populatedFields": 9,
+        "populatedRecovered": 8
+      },
+      "predicted": {
+        "vendor": "MARGUERITE FONTAINE Design Consultancy",
+        "invoiceNo": "MF-2026-0088",
+        "issueDate": "2026-05-06",
+        "dueDate": "2026-06-05",
+        "currency": "EUR",
+        "subtotal": 3200,
+        "tax": null,
+        "total": 3478.4,
+        "category": "Fees",
+        "billable": null,
+        "lineItems": []
+      }
+    },
+    {
+      "id": "13-coffee-shop",
+      "name": "Very small receipt, no tax, minimal text",
+      "medium": "text-layer",
+      "mess": [
+        "tiny document"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 245,
+      "tokensOut": 206,
+      "durationMs": 44543,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "BLUE BOTTLE",
+            "truth": "BLUE BOTTLE",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-02-11",
+            "truth": "2026-02-11",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "currency": {
+            "correct": true,
+            "predicted": "USD",
+            "truth": "USD",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": false,
+            "predicted": 9.75,
+            "truth": null,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": 9.75,
+            "truth": 9.75,
+            "correctNull": false,
+            "missed": false
+          },
+          "category": {
+            "correct": false,
+            "predicted": null,
+            "truth": "meals",
+            "correctNull": false,
+            "missed": true
+          },
+          "billable": {
+            "correct": false,
+            "predicted": null,
+            "truth": false,
+            "correctNull": false,
+            "missed": true
+          }
+        },
+        "lineItems": {
+          "correctCells": 6,
+          "totalCells": 8,
+          "matchedItems": 2,
+          "spuriousItems": 0,
+          "missingItems": 0
+        },
+        "scalarCorrect": 7,
+        "cellsCorrect": 13,
+        "cellsTotal": 18,
+        "exact": false,
+        "populatedFields": 6,
+        "populatedRecovered": 4
+      },
+      "predicted": {
+        "vendor": "BLUE BOTTLE",
+        "invoiceNo": null,
+        "issueDate": "2026-02-11",
+        "dueDate": null,
+        "currency": "USD",
+        "subtotal": 9.75,
+        "tax": null,
+        "total": 9.75,
+        "category": null,
+        "billable": null,
+        "lineItems": [
+          {
+            "description": "Drip coffee",
+            "quantity": 1,
+            "unitPrice": 4.25,
+            "amount": 4.25
+          },
+          {
+            "description": "Almond croissant",
+            "quantity": 1,
+            "unitPrice": 5.5,
+            "amount": 5.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "14-domain-registration",
+      "name": "Domain and DNS renewal, multi-year, USD",
+      "medium": "text-layer",
+      "mess": [
+        "multi-year quantity"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 327,
+      "tokensOut": 228,
+      "durationMs": 55529,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "HOLLOWAY DOMAINS",
+            "truth": "HOLLOWAY DOMAINS",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": true,
+            "predicted": "HD-2026-7734",
+            "truth": "HD-2026-7734",
+            "correctNull": false,
+            "missed": false
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-01-09",
+            "truth": "2026-01-09",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "currency": {
+            "correct": true,
+            "predicted": "USD",
+            "truth": "USD",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": true,
+            "predicted": 96,
+            "truth": 96,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": 0,
+            "truth": 0,
+            "correctNull": false,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": 96,
+            "truth": 96,
+            "correctNull": false,
+            "missed": false
+          },
+          "category": {
+            "correct": false,
+            "predicted": null,
+            "truth": "software",
+            "correctNull": false,
+            "missed": true
+          },
+          "billable": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          }
+        },
+        "lineItems": {
+          "correctCells": 4,
+          "totalCells": 8,
+          "matchedItems": 2,
+          "spuriousItems": 0,
+          "missingItems": 0
+        },
+        "scalarCorrect": 9,
+        "cellsCorrect": 13,
+        "cellsTotal": 18,
+        "exact": false,
+        "populatedFields": 8,
+        "populatedRecovered": 7
+      },
+      "predicted": {
+        "vendor": "HOLLOWAY DOMAINS",
+        "invoiceNo": "HD-2026-7734",
+        "issueDate": "2026-01-09",
+        "dueDate": null,
+        "currency": "USD",
+        "subtotal": 96,
+        "tax": 0,
+        "total": 96,
+        "category": null,
+        "billable": null,
+        "lineItems": [
+          {
+            "description": "ledgerline",
+            "quantity": 1,
+            "unitPrice": 34,
+            "amount": 68
+          },
+          {
+            "description": "studio-site",
+            "quantity": 1,
+            "unitPrice": 14,
+            "amount": 28
+          }
+        ]
+      }
+    },
+    {
+      "id": "15-insurance-premium",
+      "name": "Professional indemnity insurance, GBP, annual",
+      "medium": "image-only",
+      "mess": [
+        "low contrast",
+        "dense prose"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 347,
+      "tokensOut": 120,
+      "durationMs": 32512,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "MERIDIAN INSURANCE",
+            "truth": "MERIDIAN INSURANCE",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": false,
+            "predicted": null,
+            "truth": "MI-PI-88213",
+            "correctNull": false,
+            "missed": true
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-01-20",
+            "truth": "2026-01-20",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": false,
+            "predicted": null,
+            "truth": "2026-03-06",
+            "correctNull": false,
+            "missed": true
+          },
+          "currency": {
+            "correct": true,
+            "predicted": "GBP",
+            "truth": "GBP",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": false,
+            "predicted": 685.44,
+            "truth": 612,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": 73.44,
+            "truth": 73.44,
+            "correctNull": false,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": 685.44,
+            "truth": 685.44,
+            "correctNull": false,
+            "missed": false
+          },
+          "category": {
+            "correct": true,
+            "predicted": "Professional Indemnity",
+            "truth": "insurance",
+            "correctNull": false,
+            "missed": false
+          },
+          "billable": {
+            "correct": false,
+            "predicted": null,
+            "truth": false,
+            "correctNull": false,
+            "missed": true
+          }
+        },
+        "lineItems": {
+          "correctCells": 0,
+          "totalCells": 4,
+          "matchedItems": 0,
+          "spuriousItems": 0,
+          "missingItems": 1
+        },
+        "scalarCorrect": 6,
+        "cellsCorrect": 6,
+        "cellsTotal": 14,
+        "exact": false,
+        "populatedFields": 10,
+        "populatedRecovered": 7
+      },
+      "predicted": {
+        "vendor": "MERIDIAN INSURANCE",
+        "invoiceNo": null,
+        "issueDate": "2026-01-20",
+        "dueDate": null,
+        "currency": "GBP",
+        "subtotal": 685.44,
+        "tax": 73.44,
+        "total": 685.44,
+        "category": "Professional Indemnity",
+        "billable": null,
+        "lineItems": []
+      }
+    },
+    {
+      "id": "16-translation-services",
+      "name": "Freelance services invoice, USD, per-word rates",
+      "medium": "text-layer",
+      "mess": [
+        "per-word unit rates"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 352,
+      "tokensOut": 276,
+      "durationMs": 62243,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "J. OKONKWO TRANSLATIONS",
+            "truth": "J. OKONKWO TRANSLATIONS",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": true,
+            "predicted": "JOT-1182",
+            "truth": "JOT-1182",
+            "correctNull": false,
+            "missed": false
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-02-26",
+            "truth": "2026-02-26",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "currency": {
+            "correct": true,
+            "predicted": "USD",
+            "truth": "USD",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": true,
+            "predicted": 598,
+            "truth": 598,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": 0,
+            "truth": 0,
+            "correctNull": false,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": 598,
+            "truth": 598,
+            "correctNull": false,
+            "missed": false
+          },
+          "category": {
+            "correct": true,
+            "predicted": "services",
+            "truth": "services",
+            "correctNull": false,
+            "missed": false
+          },
+          "billable": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          }
+        },
+        "lineItems": {
+          "correctCells": 12,
+          "totalCells": 12,
+          "matchedItems": 3,
+          "spuriousItems": 0,
+          "missingItems": 0
+        },
+        "scalarCorrect": 10,
+        "cellsCorrect": 22,
+        "cellsTotal": 22,
+        "exact": true,
+        "populatedFields": 8,
+        "populatedRecovered": 8
+      },
+      "predicted": {
+        "vendor": "J. OKONKWO TRANSLATIONS",
+        "invoiceNo": "JOT-1182",
+        "issueDate": "2026-02-26",
+        "dueDate": null,
+        "currency": "USD",
+        "subtotal": 598,
+        "tax": 0,
+        "total": 598,
+        "category": "services",
+        "billable": null,
+        "lineItems": [
+          {
+            "description": "Certified translation",
+            "quantity": 4200,
+            "unitPrice": 0.115,
+            "amount": 483
+          },
+          {
+            "description": "Editing pass",
+            "quantity": 1,
+            "unitPrice": 0.09,
+            "amount": 90
+          },
+          {
+            "description": "Certified copy",
+            "quantity": 1,
+            "unitPrice": 25,
+            "amount": 25
+          }
+        ]
+      }
+    },
+    {
+      "id": "17-mobile-phone",
+      "name": "Mobile phone bill, EUR, prorated charges",
+      "medium": "text-layer",
+      "mess": [
+        "prorated lines",
+        "negative credit"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 363,
+      "tokensOut": 315,
+      "durationMs": 79476,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "TELIA MOBIL",
+            "truth": "TELIA MOBIL",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": true,
+            "predicted": "RM-2026-330871",
+            "truth": "RM-2026-330871",
+            "correctNull": false,
+            "missed": false
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-03-01",
+            "truth": "2026-03-01",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "currency": {
+            "correct": true,
+            "predicted": "EUR",
+            "truth": "EUR",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": true,
+            "predicted": 40.5,
+            "truth": 40.5,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": 6.42,
+            "truth": 6.42,
+            "correctNull": false,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": 46.92,
+            "truth": 46.92,
+            "correctNull": false,
+            "missed": false
+          },
+          "category": {
+            "correct": false,
+            "predicted": null,
+            "truth": "utilities",
+            "correctNull": false,
+            "missed": true
+          },
+          "billable": {
+            "correct": true,
+            "predicted": false,
+            "truth": false,
+            "correctNull": false,
+            "missed": false
+          }
+        },
+        "lineItems": {
+          "correctCells": 3,
+          "totalCells": 16,
+          "matchedItems": 4,
+          "spuriousItems": 0,
+          "missingItems": 0
+        },
+        "scalarCorrect": 9,
+        "cellsCorrect": 12,
+        "cellsTotal": 26,
+        "exact": false,
+        "populatedFields": 9,
+        "populatedRecovered": 8
+      },
+      "predicted": {
+        "vendor": "TELIA MOBIL",
+        "invoiceNo": "RM-2026-330871",
+        "issueDate": "2026-03-01",
+        "dueDate": null,
+        "currency": "EUR",
+        "subtotal": 40.5,
+        "tax": 6.42,
+        "total": 46.92,
+        "category": null,
+        "billable": false,
+        "lineItems": [
+          {
+            "description": "Grundpreis (01.03.-31.03.)",
+            "quantity": null,
+            "unitPrice": 29.9,
+            "amount": null
+          },
+          {
+            "description": "Daten (12,4 GB)",
+            "quantity": null,
+            "unitPrice": 9.9,
+            "amount": null
+          },
+          {
+            "description": "Roaming EU",
+            "quantity": null,
+            "unitPrice": 4.2,
+            "amount": null
+          },
+          {
+            "description": "Gutschrift Vorperiode",
+            "quantity": null,
+            "unitPrice": null,
+            "amount": -3.5
+          }
+        ]
+      }
+    },
+    {
+      "id": "18-print-shop",
+      "name": "Print shop invoice, low contrast scan, rotated",
+      "medium": "image-only",
+      "mess": [
+        "rotated scan",
+        "low contrast",
+        "OCR noise",
+        "no currency symbol"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 348,
+      "tokensOut": 322,
+      "durationMs": 67912,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "INKWELL PRINT SHOP",
+            "truth": "INKWELL PRINT SHOP",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": true,
+            "predicted": "1P-8842",
+            "truth": "1P-8842",
+            "correctNull": false,
+            "missed": false
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-03-07",
+            "truth": "2026-03-07",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "currency": {
+            "correct": false,
+            "predicted": "GBP",
+            "truth": null,
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": true,
+            "predicted": 400,
+            "truth": 400,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": 80,
+            "truth": 80,
+            "correctNull": false,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": 480,
+            "truth": 480,
+            "correctNull": false,
+            "missed": false
+          },
+          "category": {
+            "correct": false,
+            "predicted": "Business cards",
+            "truth": "printing",
+            "correctNull": false,
+            "missed": false
+          },
+          "billable": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          }
+        },
+        "lineItems": {
+          "correctCells": 8,
+          "totalCells": 16,
+          "matchedItems": 4,
+          "spuriousItems": 0,
+          "missingItems": 0
+        },
+        "scalarCorrect": 8,
+        "cellsCorrect": 16,
+        "cellsTotal": 26,
+        "exact": false,
+        "populatedFields": 7,
+        "populatedRecovered": 7
+      },
+      "predicted": {
+        "vendor": "INKWELL PRINT SHOP",
+        "invoiceNo": "1P-8842",
+        "issueDate": "2026-03-07",
+        "dueDate": null,
+        "currency": "GBP",
+        "subtotal": 400,
+        "tax": 80,
+        "total": 480,
+        "category": "Business cards",
+        "billable": null,
+        "lineItems": [
+          {
+            "description": "Business cards - 500gsm",
+            "quantity": 250,
+            "unitPrice": 180,
+            "amount": null
+          },
+          {
+            "description": "Letterheads - A4",
+            "quantity": 200,
+            "unitPrice": 140,
+            "amount": null
+          },
+          {
+            "description": "Envelopes - C5",
+            "quantity": 100,
+            "unitPrice": 55,
+            "amount": null
+          },
+          {
+            "description": "Lamination",
+            "quantity": 50,
+            "unitPrice": 25,
+            "amount": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "19-missing-total-row",
+      "name": "Total row absent, sum implied only",
+      "medium": "text-layer",
+      "mess": [
+        "missing total row"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 292,
+      "tokensOut": 216,
+      "durationMs": 50238,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "QUARRY COFFEE ROASTERS",
+            "truth": "QUARRY COFFEE ROASTERS",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": false,
+            "predicted": null,
+            "truth": "4471-B",
+            "correctNull": false,
+            "missed": true
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-03-10",
+            "truth": "2026-03-10",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "currency": {
+            "correct": false,
+            "predicted": "USD",
+            "truth": null,
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": true,
+            "predicted": 249,
+            "truth": 249,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": null,
+            "truth": null,
+            "correctNull": true,
+            "missed": false
+          },
+          "category": {
+            "correct": false,
+            "predicted": null,
+            "truth": "supplies",
+            "correctNull": false,
+            "missed": true
+          },
+          "billable": {
+            "correct": false,
+            "predicted": null,
+            "truth": false,
+            "correctNull": false,
+            "missed": true
+          }
+        },
+        "lineItems": {
+          "correctCells": 8,
+          "totalCells": 8,
+          "matchedItems": 2,
+          "spuriousItems": 0,
+          "missingItems": 0
+        },
+        "scalarCorrect": 6,
+        "cellsCorrect": 14,
+        "cellsTotal": 18,
+        "exact": false,
+        "populatedFields": 6,
+        "populatedRecovered": 3
+      },
+      "predicted": {
+        "vendor": "QUARRY COFFEE ROASTERS",
+        "invoiceNo": null,
+        "issueDate": "2026-03-10",
+        "dueDate": null,
+        "currency": "USD",
+        "subtotal": 249,
+        "tax": null,
+        "total": null,
+        "category": null,
+        "billable": null,
+        "lineItems": [
+          {
+            "description": "Ethiopia Yirgacheffe",
+            "quantity": 6,
+            "unitPrice": 22,
+            "amount": 132
+          },
+          {
+            "description": "Colombia Huila",
+            "quantity": 6,
+            "unitPrice": 19.5,
+            "amount": 117
+          }
+        ]
+      }
+    },
+    {
+      "id": "20-international-consulting",
+      "name": "International invoice, USD billed, EUR entity, itemised in words",
+      "medium": "text-layer",
+      "mess": [
+        "mixed-script entity name",
+        "amount in words"
+      ],
+      "ambiguous": false,
+      "outcome": "ok",
+      "fromCache": true,
+      "tokensIn": 401,
+      "tokensOut": 285,
+      "durationMs": 63258,
+      "attempts": 1,
+      "redactionCounts": null,
+      "score": {
+        "fields": {
+          "vendor": {
+            "correct": true,
+            "predicted": "ATELIER VERTE SARL",
+            "truth": "ATELIER VERTE SARL",
+            "correctNull": false,
+            "missed": false
+          },
+          "invoiceNo": {
+            "correct": true,
+            "predicted": "2026-AV-0331",
+            "truth": "2026-AV-0331",
+            "correctNull": false,
+            "missed": false
+          },
+          "issueDate": {
+            "correct": true,
+            "predicted": "2026-02-05",
+            "truth": "2026-02-05",
+            "correctNull": false,
+            "missed": false
+          },
+          "dueDate": {
+            "correct": true,
+            "predicted": "2026-03-07",
+            "truth": "2026-03-07",
+            "correctNull": false,
+            "missed": false
+          },
+          "currency": {
+            "correct": true,
+            "predicted": "EUR",
+            "truth": "EUR",
+            "correctNull": false,
+            "missed": false
+          },
+          "subtotal": {
+            "correct": true,
+            "predicted": 9000,
+            "truth": 9000,
+            "correctNull": false,
+            "missed": false
+          },
+          "tax": {
+            "correct": true,
+            "predicted": 1800,
+            "truth": 1800,
+            "correctNull": false,
+            "missed": false
+          },
+          "total": {
+            "correct": true,
+            "predicted": 10800,
+            "truth": 10800,
+            "correctNull": false,
+            "missed": false
+          },
+          "category": {
+            "correct": false,
+            "predicted": "Design retainer",
+            "truth": "consulting",
+            "correctNull": false,
+            "missed": false
+          },
+          "billable": {
+            "correct": false,
+            "predicted": null,
+            "truth": true,
+            "correctNull": false,
+            "missed": true
+          }
+        },
+        "lineItems": {
+          "correctCells": 3,
+          "totalCells": 12,
+          "matchedItems": 3,
+          "spuriousItems": 0,
+          "missingItems": 0
+        },
+        "scalarCorrect": 8,
+        "cellsCorrect": 11,
+        "cellsTotal": 22,
+        "exact": false,
+        "populatedFields": 10,
+        "populatedRecovered": 9
+      },
+      "predicted": {
+        "vendor": "ATELIER VERTE SARL",
+        "invoiceNo": "2026-AV-0331",
+        "issueDate": "2026-02-05",
+        "dueDate": "2026-03-07",
+        "currency": "EUR",
+        "subtotal": 9000,
+        "tax": 1800,
+        "total": 10800,
+        "category": "Design retainer",
+        "billable": null,
+        "lineItems": [
+          {
+            "description": "Research and discovery phase",
+            "quantity": null,
+            "unitPrice": 2900,
+            "amount": null
+          },
+          {
+            "description": "Interaction design",
+            "quantity": null,
+            "unitPrice": 4150,
+            "amount": null
+          },
+          {
+            "description": "Prototype build",
+            "quantity": null,
+            "unitPrice": 1950,
+            "amount": null
+          }
+        ]
+      }
+    }
+  ]
+}

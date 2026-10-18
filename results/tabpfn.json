@@ -1,0 +1,48 @@
+{
+  "model": "v3.5_default",
+  "modelPath": "v3.5_default",
+  "rowsPaid": 84,
+  "rowsOpen": 0,
+  "clients": 8,
+  "featuresPerRow": 12,
+  "featureNames": [
+    "amount",
+    "log_amount",
+    "terms_days",
+    "issue_month",
+    "issue_quarter",
+    "is_year_end",
+    "client_history_count",
+    "client_mean_days",
+    "client_std_days",
+    "client_late_rate",
+    "client_mean_amount",
+    "global_mean_days"
+  ],
+  "holdout": {
+    "trained": 67,
+    "scored": 17
+  },
+  "interval": {
+    "low": 0.1,
+    "high": 0.9
+  },
+  "metrics": {
+    "tabpfn": {
+      "mae": 7.909656412461224
+    },
+    "clientMean": {
+      "mae": 8.124257278669043
+    },
+    "globalMean": {
+      "mae": 13.479367866549605
+    }
+  },
+  "coverage": {
+    "inside": 12,
+    "total": 17,
+    "meanWidthDays": 20.23847535077263
+  },
+  "elapsedMs": 10242,
+  "tabpfnWins": true
+}
