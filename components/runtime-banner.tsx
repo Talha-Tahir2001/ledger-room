@@ -200,11 +200,14 @@ function OriginFix() {
       <pre className="overflow-x-auto rounded-md bg-muted px-2 py-1.5 font-mono text-xs text-foreground">
         {`[Environment]::SetEnvironmentVariable(` +
           `\n  "OLLAMA_ORIGINS", ` +
-          `\n  "${origin}", ` +
+          `\n  "http://localhost:3000,${origin}", ` +
           `\n  "User")`}
       </pre>
       <p className="text-xs">
-        PowerShell, on Windows. Restart Ollama afterwards — it reads the variable at startup.
+        PowerShell, on Windows. <code className="font-mono">OLLAMA_ORIGINS</code> is a
+        comma-separated list read by Ollama at startup, so append to whatever is already
+        there rather than replacing it &mdash; the value above keeps local development
+        working as well. Then restart Ollama, which reads the variable only at startup.
       </p>
     </div>
   )
