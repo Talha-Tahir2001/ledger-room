@@ -1,5 +1,6 @@
 "use client"
 
+import * as React from "react"
 import { IconAlertTriangle, IconCloudOff, IconCpu, IconInfoCircle, IconRefresh } from "@tabler/icons-react"
 
 import { Badge } from "@/components/ui/badge"
@@ -140,18 +141,72 @@ export function RuntimeBanner({ compact = false }: { compact?: boolean }) {
       {!compact && runtime.localProbe?.failure && (
         <span className="block pt-1">{runtime.localProbe.detail}</span>
       )}
-      {!compact && (
-        <>
-          <span className="block pt-1">
-            To run extraction for real, install Ollama and pull{" "}
-            <code className="font-mono">{runtime.localModel}</code>, then press Re-check. If
-            Ollama is already running and this still says no, the browser refused the request:
-            check that <code className="font-mono">OLLAMA_ORIGINS</code> includes this
-            page&rsquo;s origin, and restart Ollama after changing it.
-          </span>
-        </>
+      {!compact && runtime.localProbe?.failure === "unreachable" && (
+        <div className="block pt-2">
+          <p className="text-foreground">
+            Ollama ignores requests from an origin it does not list, and the browser reports
+            that only as &ldquo;CORS blocked&rdquo; — which is indistinguishable from Ollama not
+            running. If Ollama <em>is</em> running, this is almost certainly the cause.
+          </p>
+
+          {/* Read after mount, because `window` does not exist during the server
+              render and reading it there would be a hydration mismatch. */}
+          <OriginFix />
+
+          <p className="pt-2">
+            Then restart Ollama and press Re-check. If Ollama is genuinely not running, start
+            it and pull <code className="font-mono">{runtime.localModel}</code> instead.
+          </p>
+        </div>
+      )}
+      {!compact && runtime.localProbe?.failure !== "unreachable" && (
+        <span className="block pt-1">
+          To run extraction for real, install Ollama and pull{" "}
+          <code className="font-mono">{runtime.localModel}</code>, then press Re-check.
+        </span>
       )}
     </BannerShell>
+  )
+}
+
+/**
+ * The exact command to allow this page's origin, with the origin already filled
+ * in.
+ *
+ * This exists because the failure is otherwise a dead end. Ollama answers a
+ * request from a disallowed origin with a 403 and no
+ * `Access-Control-Allow-Origin`, which the browser surfaces only as "CORS
+ * blocked" — visually identical to Ollama not running, and requiring the user to
+ * work out their own origin to fix it. Handing over a runnable command is the
+ * difference between a five-second fix and an afternoon.
+ */
+function OriginFix() {
+  // Read after mount, because `window` does not exist during the server render
+  // and reading it there would be a hydration mismatch. useSyncExternalStore
+  // expresses that honestly with no effect and no cascading render.
+  const origin = React.useSyncExternalStore(
+    () => () => {},
+    () => window.location.origin,
+    () => ""
+  )
+
+  if (!origin) return null
+
+  return (
+    <div className="mt-1.5 flex flex-col gap-1">
+      <p className="text-foreground">
+        Allow this page&rsquo;s origin (<code className="font-mono">{origin}</code>):
+      </p>
+      <pre className="overflow-x-auto rounded-md bg-muted px-2 py-1.5 font-mono text-xs text-foreground">
+        {`[Environment]::SetEnvironmentVariable(` +
+          `\n  "OLLAMA_ORIGINS", ` +
+          `\n  "${origin}", ` +
+          `\n  "User")`}
+      </pre>
+      <p className="text-xs">
+        PowerShell, on Windows. Restart Ollama afterwards — it reads the variable at startup.
+      </p>
+    </div>
   )
 }
 
