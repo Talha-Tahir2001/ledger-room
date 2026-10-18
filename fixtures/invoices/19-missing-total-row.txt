@@ -1,0 +1,11 @@
+QUARRY COFFEE ROASTERS
+Wholesale invoice
+
+Account 4471-B
+Roasted 2026-03-10
+
+Product                      Kg      Rate/kg    Amount
+Ethiopia Yirgacheffe          6       22.00     132.00
+Colombia Huila                6       19.50     117.00
+
+Net amount                             249.00

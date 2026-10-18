@@ -1,0 +1,13 @@
+{
+  "vendor": "K-ELECTRIC",
+  "invoiceNo": "4110229837",
+  "issueDate": "2026-01-31",
+  "dueDate": "2026-02-20",
+  "currency": "PKR",
+  "subtotal": 21516,
+  "tax": null,
+  "total": 21516,
+  "category": "utilities",
+  "billable": false,
+  "lineItems": []
+}

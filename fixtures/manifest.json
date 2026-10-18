@@ -1,0 +1,459 @@
+{
+  "generatedBy": "scripts/gen-fixtures.ts",
+  "note": "Ground truth is authored in scripts/fixtures.data.ts before the first eval run and is never edited to match model output.",
+  "fixtures": [
+    {
+      "id": "01-saas-team-plan",
+      "name": "SaaS subscription, table layout, USD",
+      "medium": "text-layer",
+      "mess": [],
+      "ambiguous": false,
+      "document": "01-saas-team-plan.pdf",
+      "image": null,
+      "text": "01-saas-team-plan.txt",
+      "truth": "01-saas-team-plan.truth.json",
+      "acceptable": {
+        "category": [
+          "software",
+          "saas",
+          "subscription"
+        ]
+      }
+    },
+    {
+      "id": "02-restaurant-receipt",
+      "name": "Restaurant receipt, prose totals, no invoice number",
+      "medium": "text-layer",
+      "mess": [
+        "no invoice number"
+      ],
+      "ambiguous": false,
+      "document": "02-restaurant-receipt.pdf",
+      "image": null,
+      "text": "02-restaurant-receipt.txt",
+      "truth": "02-restaurant-receipt.truth.json",
+      "acceptable": {
+        "category": [
+          "meals",
+          "food",
+          "restaurant",
+          "dining"
+        ],
+        "issueDate": [
+          "2026-03-22"
+        ]
+      }
+    },
+    {
+      "id": "03-german-prose-total",
+      "name": "German invoice, decimal commas, EUR",
+      "medium": "text-layer",
+      "mess": [
+        "decimal commas",
+        "thousands separators",
+        "prose totals"
+      ],
+      "ambiguous": false,
+      "document": "03-german-prose-total.pdf",
+      "image": null,
+      "text": "03-german-prose-total.txt",
+      "truth": "03-german-prose-total.truth.json",
+      "acceptable": {
+        "category": [
+          "consulting",
+          "professional services",
+          "services",
+          "design"
+        ]
+      }
+    },
+    {
+      "id": "04-hardware-ocr-garbled",
+      "name": "Image-only hardware receipt with OCR garbling",
+      "medium": "image-only",
+      "mess": [
+        "OCR noise",
+        "spaced-out digits",
+        "non-standard total label"
+      ],
+      "ambiguous": false,
+      "document": "04-hardware-ocr-garbled.pdf",
+      "image": "04-hardware-ocr-garbled.png",
+      "text": "04-hardware-ocr-garbled.txt",
+      "truth": "04-hardware-ocr-garbled.truth.json",
+      "acceptable": {
+        "category": [
+          "hardware",
+          "equipment",
+          "computer hardware"
+        ]
+      }
+    },
+    {
+      "id": "05-utility-pkr",
+      "name": "Pakistani electricity bill, PKR, no tax line",
+      "medium": "text-layer",
+      "mess": [
+        "no tax line",
+        "Rs prefix instead of ISO code",
+        "spaces in digits"
+      ],
+      "ambiguous": false,
+      "document": "05-utility-pkr.pdf",
+      "image": null,
+      "text": "05-utility-pkr.txt",
+      "truth": "05-utility-pkr.truth.json",
+      "acceptable": {
+        "category": [
+          "utilities",
+          "electricity",
+          "energy",
+          "utilities and energy"
+        ],
+        "invoiceNo": [
+          "4110229837"
+        ],
+        "issueDate": [
+          "2026-01-31",
+          "2026-02-20"
+        ]
+      }
+    },
+    {
+      "id": "06-coworking-gbp",
+      "name": "UK coworking membership, GBP, ambiguous date",
+      "medium": "text-layer",
+      "mess": [
+        "ambiguous numeric date"
+      ],
+      "ambiguous": true,
+      "document": "06-coworking-gbp.pdf",
+      "image": null,
+      "text": "06-coworking-gbp.txt",
+      "truth": "06-coworking-gbp.truth.json",
+      "acceptable": {
+        "category": [
+          "coworking",
+          "office",
+          "workspace",
+          "office rent"
+        ],
+        "issueDate": [
+          "2026-03-04",
+          "2026-04-03"
+        ],
+        "dueDate": [
+          "2026-05-03",
+          "2026-03-05"
+        ]
+      }
+    },
+    {
+      "id": "07-client-invoice-billable",
+      "name": "Client invoice with explicit billable signal",
+      "medium": "text-layer",
+      "mess": [],
+      "ambiguous": false,
+      "document": "07-client-invoice-billable.pdf",
+      "image": null,
+      "text": "07-client-invoice-billable.txt",
+      "truth": "07-client-invoice-billable.truth.json",
+      "acceptable": {
+        "category": [
+          "consulting",
+          "professional services",
+          "design",
+          "services"
+        ]
+      }
+    },
+    {
+      "id": "08-cloud-hosting-usage",
+      "name": "Cloud hosting with usage-style invoice, USD",
+      "medium": "text-layer",
+      "mess": [
+        "many line items"
+      ],
+      "ambiguous": false,
+      "document": "08-cloud-hosting-usage.pdf",
+      "image": null,
+      "text": "08-cloud-hosting-usage.txt",
+      "truth": "08-cloud-hosting-usage.truth.json",
+      "acceptable": {
+        "category": [
+          "hosting",
+          "infrastructure",
+          "cloud",
+          "cloud hosting"
+        ]
+      }
+    },
+    {
+      "id": "09-airline-confirmation",
+      "name": "Airline booking confirmation, no tax breakdown",
+      "medium": "text-layer",
+      "mess": [
+        "prose layout",
+        "no subtotal line"
+      ],
+      "ambiguous": false,
+      "document": "09-airline-confirmation.pdf",
+      "image": null,
+      "text": "09-airline-confirmation.txt",
+      "truth": "09-airline-confirmation.truth.json",
+      "acceptable": {
+        "category": [
+          "travel",
+          "flights",
+          "air travel",
+          "transport"
+        ],
+        "issueDate": [
+          "2026-04-08"
+        ]
+      }
+    },
+    {
+      "id": "10-gym-membership",
+      "name": "Gym membership, minimal fields, no itemisation",
+      "medium": "text-layer",
+      "mess": [
+        "minimal document"
+      ],
+      "ambiguous": false,
+      "document": "10-gym-membership.pdf",
+      "image": null,
+      "text": "10-gym-membership.txt",
+      "truth": "10-gym-membership.truth.json",
+      "acceptable": {
+        "category": [
+          "health",
+          "fitness",
+          "wellness",
+          "health and fitness"
+        ]
+      }
+    },
+    {
+      "id": "11-legal-retainer",
+      "name": "Legal services invoice, USD, stamp overlap",
+      "medium": "image-only",
+      "mess": [
+        "stamp overlap",
+        "OCR noise",
+        "no due date"
+      ],
+      "ambiguous": false,
+      "document": "11-legal-retainer.pdf",
+      "image": "11-legal-retainer.png",
+      "text": "11-legal-retainer.txt",
+      "truth": "11-legal-retainer.truth.json",
+      "acceptable": {
+        "category": [
+          "legal",
+          "professional services",
+          "services",
+          "fees"
+        ]
+      }
+    },
+    {
+      "id": "12-freelance-client-eu",
+      "name": "European client invoice billed in USD, multi-currency",
+      "medium": "text-layer",
+      "mess": [
+        "multi-currency on one document"
+      ],
+      "ambiguous": false,
+      "document": "12-freelance-client-eu.pdf",
+      "image": null,
+      "text": "12-freelance-client-eu.txt",
+      "truth": "12-freelance-client-eu.truth.json",
+      "acceptable": {
+        "category": [
+          "consulting",
+          "professional services",
+          "design",
+          "services"
+        ],
+        "total": [
+          3478.4,
+          3200
+        ]
+      }
+    },
+    {
+      "id": "13-coffee-shop",
+      "name": "Very small receipt, no tax, minimal text",
+      "medium": "text-layer",
+      "mess": [
+        "tiny document"
+      ],
+      "ambiguous": false,
+      "document": "13-coffee-shop.pdf",
+      "image": null,
+      "text": "13-coffee-shop.txt",
+      "truth": "13-coffee-shop.truth.json",
+      "acceptable": {
+        "category": [
+          "meals",
+          "food",
+          "coffee",
+          "dining"
+        ]
+      }
+    },
+    {
+      "id": "14-domain-registration",
+      "name": "Domain and DNS renewal, multi-year, USD",
+      "medium": "text-layer",
+      "mess": [
+        "multi-year quantity"
+      ],
+      "ambiguous": false,
+      "document": "14-domain-registration.pdf",
+      "image": null,
+      "text": "14-domain-registration.txt",
+      "truth": "14-domain-registration.truth.json",
+      "acceptable": {
+        "category": [
+          "software",
+          "domains",
+          "web hosting",
+          "hosting"
+        ]
+      }
+    },
+    {
+      "id": "15-insurance-premium",
+      "name": "Professional indemnity insurance, GBP, annual",
+      "medium": "image-only",
+      "mess": [
+        "low contrast",
+        "dense prose"
+      ],
+      "ambiguous": false,
+      "document": "15-insurance-premium.pdf",
+      "image": "15-insurance-premium.png",
+      "text": "15-insurance-premium.txt",
+      "truth": "15-insurance-premium.truth.json",
+      "acceptable": {
+        "category": [
+          "insurance",
+          "professional indemnity",
+          "insurance and fees"
+        ]
+      }
+    },
+    {
+      "id": "16-translation-services",
+      "name": "Freelance services invoice, USD, per-word rates",
+      "medium": "text-layer",
+      "mess": [
+        "per-word unit rates"
+      ],
+      "ambiguous": false,
+      "document": "16-translation-services.pdf",
+      "image": null,
+      "text": "16-translation-services.txt",
+      "truth": "16-translation-services.truth.json",
+      "acceptable": {
+        "category": [
+          "services",
+          "consulting",
+          "professional services",
+          "translation"
+        ]
+      }
+    },
+    {
+      "id": "17-mobile-phone",
+      "name": "Mobile phone bill, EUR, prorated charges",
+      "medium": "text-layer",
+      "mess": [
+        "prorated lines",
+        "negative credit"
+      ],
+      "ambiguous": false,
+      "document": "17-mobile-phone.pdf",
+      "image": null,
+      "text": "17-mobile-phone.txt",
+      "truth": "17-mobile-phone.truth.json",
+      "acceptable": {
+        "category": [
+          "utilities",
+          "telecom",
+          "phone",
+          "mobile"
+        ]
+      }
+    },
+    {
+      "id": "18-print-shop",
+      "name": "Print shop invoice, low contrast scan, rotated",
+      "medium": "image-only",
+      "mess": [
+        "rotated scan",
+        "low contrast",
+        "OCR noise",
+        "no currency symbol"
+      ],
+      "ambiguous": false,
+      "document": "18-print-shop.pdf",
+      "image": "18-print-shop.png",
+      "text": "18-print-shop.txt",
+      "truth": "18-print-shop.truth.json",
+      "acceptable": {
+        "category": [
+          "printing",
+          "services",
+          "office supplies",
+          "marketing"
+        ]
+      }
+    },
+    {
+      "id": "19-missing-total-row",
+      "name": "Total row absent, sum implied only",
+      "medium": "text-layer",
+      "mess": [
+        "missing total row"
+      ],
+      "ambiguous": false,
+      "document": "19-missing-total-row.pdf",
+      "image": null,
+      "text": "19-missing-total-row.txt",
+      "truth": "19-missing-total-row.truth.json",
+      "acceptable": {
+        "category": [
+          "supplies",
+          "coffee",
+          "food",
+          "inventory"
+        ]
+      }
+    },
+    {
+      "id": "20-international-consulting",
+      "name": "International invoice, USD billed, EUR entity, itemised in words",
+      "medium": "text-layer",
+      "mess": [
+        "mixed-script entity name",
+        "amount in words"
+      ],
+      "ambiguous": false,
+      "document": "20-international-consulting.pdf",
+      "image": null,
+      "text": "20-international-consulting.txt",
+      "truth": "20-international-consulting.truth.json",
+      "acceptable": {
+        "category": [
+          "consulting",
+          "design",
+          "professional services",
+          "services"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 4 0 R >> /ProcSet [/PDF /Text] >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 930 >>
+stream
+BT
+/F1 9 Tf
+14 TL
+1 0 0 1 36 810 Tm
+0.05 g
+(CIRRUS CLOUD) Tj
+T*
+0.05 g
+(Billing Statement) Tj
+T*
+0.05 g
+() Tj
+T*
+0.05 g
+(Account: acct_9931kd) Tj
+T*
+0.05 g
+(Statement Period: 2026-02-01 to 2026-02-28) Tj
+T*
+0.05 g
+(Issued: 2026-03-01) Tj
+T*
+0.25 g
+() Tj
+T*
+0.05 g
+(Usage                                Quantity       Rate        Amount) Tj
+T*
+0.05 g
+(Compute \(vCPU-hours\)                  720 h      0.0312      22.46) Tj
+T*
+0.05 g
+(Object storage \(GB-month\)             840 GB      0.023       19.32) Tj
+T*
+0.05 g
+(Egress \(GB\)                            410 GB      0.090       36.90) Tj
+T*
+0.05 g
+(Managed database \(instance-month\)        1         49.00       49.00) Tj
+T*
+0.05 g
+() Tj
+T*
+0.25 g
+(Subtotal                                             127.68) Tj
+T*
+0.05 g
+(Estimated tax                                          10.21) Tj
+T*
+0.05 g
+(Amount due                                            137.89) Tj
+T*
+ET
+
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000000 00000 n 
+0000000049 00000 n 
+0000000106 00000 n 
+0000000260 00000 n 
+0000000355 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1351
+%%EOF

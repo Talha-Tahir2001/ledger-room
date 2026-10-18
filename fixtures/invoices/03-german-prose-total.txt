@@ -1,0 +1,13 @@
+Rechnung
+
+Dienstleister: Ludwig & Sohn GmbH
+Rechnungsnummer: 2026-0455
+Rechnungsdatum: 14.03.2026
+Fällig am: 13.04.2026
+
+Leistung                     Netto          MwSt          Brutto
+Beratung Design          2.400,00 EUR    456,00 EUR   2.856,00 EUR
+
+Rechnungsbetrag                                    2.856,00 EUR
+
+Zahlbar innerhalb 30 Tagen ohne Abzug.

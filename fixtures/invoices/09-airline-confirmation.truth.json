@@ -1,0 +1,26 @@
+{
+  "vendor": null,
+  "invoiceNo": "QK7ZP2",
+  "issueDate": "2026-04-08",
+  "dueDate": null,
+  "currency": "GBP",
+  "subtotal": 642,
+  "tax": 148.3,
+  "total": 790.3,
+  "category": "travel",
+  "billable": false,
+  "lineItems": [
+    {
+      "description": "Fare",
+      "quantity": null,
+      "unitPrice": null,
+      "amount": 642
+    },
+    {
+      "description": "Taxes and carrier charges",
+      "quantity": null,
+      "unitPrice": null,
+      "amount": 148.3
+    }
+  ]
+}

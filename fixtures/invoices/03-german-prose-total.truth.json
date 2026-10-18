@@ -1,0 +1,20 @@
+{
+  "vendor": "Ludwig & Sohn GmbH",
+  "invoiceNo": "2026-0455",
+  "issueDate": "2026-03-14",
+  "dueDate": "2026-04-13",
+  "currency": "EUR",
+  "subtotal": 2400,
+  "tax": 456,
+  "total": 2856,
+  "category": "consulting",
+  "billable": null,
+  "lineItems": [
+    {
+      "description": "Beratung Design",
+      "quantity": null,
+      "unitPrice": null,
+      "amount": 2400
+    }
+  ]
+}

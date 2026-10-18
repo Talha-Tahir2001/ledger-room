@@ -1,0 +1,20 @@
+{
+  "vendor": "MERIDIAN INSURANCE",
+  "invoiceNo": "MI-PI-88213",
+  "issueDate": "2026-01-20",
+  "dueDate": "2026-03-06",
+  "currency": "GBP",
+  "subtotal": 612,
+  "tax": 73.44,
+  "total": 685.44,
+  "category": "insurance",
+  "billable": false,
+  "lineItems": [
+    {
+      "description": "Premium for the policy period",
+      "quantity": null,
+      "unitPrice": null,
+      "amount": 612
+    }
+  ]
+}

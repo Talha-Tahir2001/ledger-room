@@ -1,0 +1,13 @@
+Booking confirmation
+Reference: QK7ZP2
+
+PASSENGER: S RIVERA
+ROUTE: LHR -> LAX
+DEPART: 2026-04-08
+RETURN: 2026-04-15
+
+Fare: 642.00 GBP
+Taxes and carrier charges: 148.30 GBP
+Total paid: 790.30 GBP
+
+Seat 12A reserved. Fare is non-refundable.

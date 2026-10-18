@@ -1,0 +1,13 @@
+K-ELECTRIC BILL
+Consumer No: 4110229837
+Billing Period: 01/01/2026 - 31/01/2026
+Meter Reading Previous: 48210
+Meter Reading Current: 49188
+
+Units Consumed: 978
+Tariff Category: Residential
+
+Amount Payable: Rs 21,516
+Due Date: 20/02/2026
+
+This is a computer generated bill.

@@ -1,0 +1,19 @@
+ATELIER VERTE SARL
+14 rue Beaubourg, 75004 Paris, France
+
+FACTURE N 2026-AV-0331
+Date de facture: 2026-02-05
+Echeance: 2026-03-07
+
+Client: Halcyon Robotics Ltd
+
+Design retainer, February 2026
+  Research and discovery phase ........ 2,900.00 EUR
+  Interaction design .................. 4,150.00 EUR
+  Prototype build .................... 1,950.00 EUR
+
+Total HT .............................. 9,000.00 EUR
+TVA 20% ............................... 1,800.00 EUR
+Total TTC ............................. 10,800.00 EUR
+
+Amount in words: Ten thousand eight hundred euro.

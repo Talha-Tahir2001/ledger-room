@@ -1,0 +1,20 @@
+{
+  "vendor": "IRONWORKS GYM",
+  "invoiceNo": "IW-4471",
+  "issueDate": "2026-03-01",
+  "dueDate": "2026-04-01",
+  "currency": "EUR",
+  "subtotal": null,
+  "tax": null,
+  "total": 39,
+  "category": "health",
+  "billable": false,
+  "lineItems": [
+    {
+      "description": "Monthly membership",
+      "quantity": null,
+      "unitPrice": null,
+      "amount": 39
+    }
+  ]
+}

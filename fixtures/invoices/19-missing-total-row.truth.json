@@ -1,0 +1,26 @@
+{
+  "vendor": "QUARRY COFFEE ROASTERS",
+  "invoiceNo": "4471-B",
+  "issueDate": "2026-03-10",
+  "dueDate": null,
+  "currency": null,
+  "subtotal": 249,
+  "tax": null,
+  "total": null,
+  "category": "supplies",
+  "billable": false,
+  "lineItems": [
+    {
+      "description": "Ethiopia Yirgacheffe",
+      "quantity": 6,
+      "unitPrice": 22,
+      "amount": 132
+    },
+    {
+      "description": "Colombia Huila",
+      "quantity": 6,
+      "unitPrice": 19.5,
+      "amount": 117
+    }
+  ]
+}

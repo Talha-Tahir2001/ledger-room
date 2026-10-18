@@ -1,0 +1,21 @@
+RIVERA DESIGN STUDIO
+Invoice to: Halcyon Robotics Ltd
+Attn: Finance Department
+
+Invoice Number: RDS-2026-0118
+Invoice Date: 2026-01-18
+Due Date: 2026-02-17
+
+Re: Product design retainer, January 2026
+Billable to client per MSA section 4.
+
+Line item                        Hours    Rate        Amount
+UX audit and findings           12.0     145.00     1740.00
+Design system updates           18.5     145.00     2682.50
+Stakeholder workshop              4.0     145.00      580.00
+
+Subtotal                                     5002.50
+VAT 20%                                      500.25
+TOTAL DUE                                   5502.75
+
+Payment terms: Net 30

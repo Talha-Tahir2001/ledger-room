@@ -1,0 +1,38 @@
+{
+  "vendor": "CIRRUS CLOUD",
+  "invoiceNo": "acct_9931kd",
+  "issueDate": "2026-03-01",
+  "dueDate": null,
+  "currency": "USD",
+  "subtotal": 127.68,
+  "tax": 10.21,
+  "total": 137.89,
+  "category": "hosting",
+  "billable": null,
+  "lineItems": [
+    {
+      "description": "Compute (vCPU-hours)",
+      "quantity": 720,
+      "unitPrice": 0.0312,
+      "amount": 22.46
+    },
+    {
+      "description": "Object storage (GB-month)",
+      "quantity": 840,
+      "unitPrice": 0.023,
+      "amount": 19.32
+    },
+    {
+      "description": "Egress (GB)",
+      "quantity": 410,
+      "unitPrice": 0.09,
+      "amount": 36.9
+    },
+    {
+      "description": "Managed database (instance-month)",
+      "quantity": 1,
+      "unitPrice": 49,
+      "amount": 49
+    }
+  ]
+}

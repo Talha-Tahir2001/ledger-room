@@ -1,0 +1,24 @@
+NORTHWIND ANALYTICS
+Suite 400, 1200 Market Street
+San Francisco, CA 94102
+
+INVOICE
+Invoice Number: NW-2026-0431
+Issue Date: 2026-03-14
+Due Date: 2026-04-13
+Terms: Net 30
+
+Bill To:
+Sam Rivera
+Rivera Design Studio
+
+Description                          Qty     Unit Price        Amount
+Analytics Pro - Team plan           12 mo        49.00          588.00
+Additional seats                      3        19.00           57.00
+Priority support                      1        75.00           75.00
+
+Subtotal                                             720.00
+Sales Tax (8.5%)                                       61.20
+TOTAL DUE                                            781.20 USD
+
+Payment is due within 30 days of the issue date.

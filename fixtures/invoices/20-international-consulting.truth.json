@@ -1,0 +1,32 @@
+{
+  "vendor": "ATELIER VERTE SARL",
+  "invoiceNo": "2026-AV-0331",
+  "issueDate": "2026-02-05",
+  "dueDate": "2026-03-07",
+  "currency": "EUR",
+  "subtotal": 9000,
+  "tax": 1800,
+  "total": 10800,
+  "category": "consulting",
+  "billable": true,
+  "lineItems": [
+    {
+      "description": "Research and discovery phase",
+      "quantity": null,
+      "unitPrice": null,
+      "amount": 2900
+    },
+    {
+      "description": "Interaction design",
+      "quantity": null,
+      "unitPrice": null,
+      "amount": 4150
+    },
+    {
+      "description": "Prototype build",
+      "quantity": null,
+      "unitPrice": null,
+      "amount": 1950
+    }
+  ]
+}

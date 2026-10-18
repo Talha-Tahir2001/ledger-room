@@ -1,0 +1,16 @@
+MARGUERITE FONTAINE
+Design Consultancy
+
+Invoice to: Halcyon Robotics Ltd
+Invoice number: MF-2026-0088
+Date: 2026-05-06
+Payment due: 2026-06-05
+
+Fees in EUR: 3.200,00 EUR
+Billed to client in USD at 1.0870: USD 3,478.40
+
+Total due: USD 3,478.40
+
+Bank details
+IBAN: FR76 3000 4000 0512 3456 7890 189
+BIC: AGRIFRPP889

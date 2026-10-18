@@ -1,0 +1,110 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 4 0 R >> /ProcSet [/PDF /Text] >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 1129 >>
+stream
+BT
+/F1 9 Tf
+14 TL
+1 0 0 1 36 810 Tm
+0.05 g
+(NORTHWIND ANALYTICS) Tj
+T*
+0.05 g
+(Suite 400, 1200 Market Street) Tj
+T*
+0.05 g
+(San Francisco, CA 94102) Tj
+T*
+0.05 g
+() Tj
+T*
+0.05 g
+(INVOICE) Tj
+T*
+0.05 g
+(Invoice Number: NW-2026-0431) Tj
+T*
+0.25 g
+(Issue Date: 2026-03-14) Tj
+T*
+0.05 g
+(Due Date: 2026-04-13) Tj
+T*
+0.05 g
+(Terms: Net 30) Tj
+T*
+0.05 g
+() Tj
+T*
+0.05 g
+(Bill To:) Tj
+T*
+0.05 g
+(Sam Rivera) Tj
+T*
+0.05 g
+(Rivera Design Studio) Tj
+T*
+0.25 g
+() Tj
+T*
+0.05 g
+(Description                          Qty     Unit Price        Amount) Tj
+T*
+0.05 g
+(Analytics Pro - Team plan           12 mo        49.00          588.00) Tj
+T*
+0.05 g
+(Additional seats                      3        19.00           57.00) Tj
+T*
+0.05 g
+(Priority support                      1        75.00           75.00) Tj
+T*
+0.05 g
+() Tj
+T*
+0.05 g
+(Subtotal                                             720.00) Tj
+T*
+0.25 g
+(Sales Tax \(8.5%\)                                       61.20) Tj
+T*
+0.05 g
+(TOTAL DUE                                            781.20 USD) Tj
+T*
+0.05 g
+() Tj
+T*
+0.05 g
+(Payment is due within 30 days of the issue date.) Tj
+T*
+ET
+
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000000 00000 n 
+0000000049 00000 n 
+0000000106 00000 n 
+0000000260 00000 n 
+0000000355 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1551
+%%EOF

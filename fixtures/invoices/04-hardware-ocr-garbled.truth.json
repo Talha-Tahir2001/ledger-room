@@ -1,0 +1,32 @@
+{
+  "vendor": "Pixel Forge Hardware",
+  "invoiceNo": "PF-99-2214",
+  "issueDate": "2026-02-09",
+  "dueDate": null,
+  "currency": "EUR",
+  "subtotal": 728.9,
+  "tax": null,
+  "total": 728.9,
+  "category": "hardware",
+  "billable": false,
+  "lineItems": [
+    {
+      "description": "34\" ultrawide monitor",
+      "quantity": 1,
+      "unitPrice": null,
+      "amount": 549
+    },
+    {
+      "description": "USB-C dock",
+      "quantity": 2,
+      "unitPrice": null,
+      "amount": 89.95
+    },
+    {
+      "description": "HDMI cable",
+      "quantity": 1,
+      "unitPrice": null,
+      "amount": 12.5
+    }
+  ]
+}

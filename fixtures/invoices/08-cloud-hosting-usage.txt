@@ -1,0 +1,16 @@
+CIRRUS CLOUD
+Billing Statement
+
+Account: acct_9931kd
+Statement Period: 2026-02-01 to 2026-02-28
+Issued: 2026-03-01
+
+Usage                                Quantity       Rate        Amount
+Compute (vCPU-hours)                  720 h      0.0312      22.46
+Object storage (GB-month)             840 GB      0.023       19.32
+Egress (GB)                            410 GB      0.090       36.90
+Managed database (instance-month)        1         49.00       49.00
+
+Subtotal                                             127.68
+Estimated tax                                          10.21
+Amount due                                            137.89

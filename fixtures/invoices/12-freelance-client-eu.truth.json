@@ -1,0 +1,20 @@
+{
+  "vendor": "MARGUERITE FONTAINE",
+  "invoiceNo": "MF-2026-0088",
+  "issueDate": "2026-05-06",
+  "dueDate": "2026-06-05",
+  "currency": "USD",
+  "subtotal": 3200,
+  "tax": null,
+  "total": 3478.4,
+  "category": "consulting",
+  "billable": true,
+  "lineItems": [
+    {
+      "description": "Fees",
+      "quantity": null,
+      "unitPrice": null,
+      "amount": 3200
+    }
+  ]
+}
