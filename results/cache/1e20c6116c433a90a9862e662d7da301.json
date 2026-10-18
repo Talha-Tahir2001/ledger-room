@@ -1,0 +1,39 @@
+{
+  "value": {
+    "vendor": "Pixel Forge Hardware",
+    "invoiceNo": "PF-99-2214",
+    "issueDate": "2026-02-06",
+    "dueDate": "null",
+    "currency": "EUR",
+    "subtotal": 728.9,
+    "tax": null,
+    "total": 728.9,
+    "category": "Hardware",
+    "billable": true,
+    "lineItems": [
+      {
+        "description": "34\" ultrawide m.on",
+        "quantity": 1,
+        "unitPrice": 549,
+        "amount": 549
+      },
+      {
+        "description": "US B-C dock",
+        "quantity": 2,
+        "unitPrice": 89.95,
+        "amount": 89.95
+      },
+      {
+        "description": "HDMI cab1e",
+        "quantity": 1,
+        "unitPrice": 12.5,
+        "amount": 12.5
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 323,
+  "tokensOut": 280,
+  "durationMs": 37654,
+  "attempts": 1
+}

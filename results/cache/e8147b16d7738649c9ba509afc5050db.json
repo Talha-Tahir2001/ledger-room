@@ -1,0 +1,39 @@
+{
+  "value": {
+    "vendor": "RIVERA DESIGN STUDIO",
+    "invoiceNo": "RDS-2026-0118",
+    "issueDate": "2026-01-18",
+    "dueDate": "2026-02-17",
+    "currency": null,
+    "subtotal": 5002.5,
+    "tax": 500.25,
+    "total": 5502.75,
+    "category": "Product design retainer",
+    "billable": true,
+    "lineItems": [
+      {
+        "description": "UX audit and findings",
+        "quantity": 12,
+        "unitPrice": 145,
+        "amount": 1740
+      },
+      {
+        "description": "Design system updates",
+        "quantity": 18.5,
+        "unitPrice": 145,
+        "amount": 2682.5
+      },
+      {
+        "description": "Stakeholder workshop",
+        "quantity": 4,
+        "unitPrice": 145,
+        "amount": 580
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 410,
+  "tokensOut": 309,
+  "durationMs": 46881,
+  "attempts": 1
+}

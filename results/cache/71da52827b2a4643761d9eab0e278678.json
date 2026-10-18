@@ -1,0 +1,51 @@
+{
+  "value": {
+    "vendor": "THE GREEN KITCHEN",
+    "invoiceNo": null,
+    "issueDate": "2026-03-22",
+    "dueDate": null,
+    "currency": null,
+    "subtotal": 39.25,
+    "tax": 3.34,
+    "total": 42.59,
+    "category": "Food & Beverage",
+    "billable": true,
+    "lineItems": [
+      {
+        "description": "Espresso",
+        "quantity": 1,
+        "unitPrice": 3.5,
+        "amount": 3.5
+      },
+      {
+        "description": "House sandwich",
+        "quantity": 2,
+        "unitPrice": 11,
+        "amount": 22
+      },
+      {
+        "description": "Soup of the day",
+        "quantity": 1,
+        "unitPrice": 7.25,
+        "amount": 7.25
+      },
+      {
+        "description": "Sparkling water",
+        "quantity": 3,
+        "unitPrice": 9,
+        "amount": 27
+      },
+      {
+        "description": "Tiramisu",
+        "quantity": 1,
+        "unitPrice": 8.5,
+        "amount": 8.5
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 335,
+  "tokensOut": 351,
+  "durationMs": 38307,
+  "attempts": 1
+}

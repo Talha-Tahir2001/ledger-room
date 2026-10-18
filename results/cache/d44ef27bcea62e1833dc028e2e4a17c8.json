@@ -1,0 +1,39 @@
+{
+  "value": {
+    "vendor": "J. OKONKWO TRANSLATIONS",
+    "invoiceNo": "JOT-1182",
+    "issueDate": "2026-02-26",
+    "dueDate": null,
+    "currency": "USD",
+    "subtotal": 598,
+    "tax": 0,
+    "total": 598,
+    "category": "services",
+    "billable": null,
+    "lineItems": [
+      {
+        "description": "Certified translation",
+        "quantity": 4200,
+        "unitPrice": 0.115,
+        "amount": 483
+      },
+      {
+        "description": "Editing pass",
+        "quantity": 1,
+        "unitPrice": 0.09,
+        "amount": 90
+      },
+      {
+        "description": "Certified copy",
+        "quantity": 1,
+        "unitPrice": 25,
+        "amount": 25
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 352,
+  "tokensOut": 276,
+  "durationMs": 80127,
+  "attempts": 1
+}

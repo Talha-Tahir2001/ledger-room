@@ -1,0 +1,39 @@
+{
+  "value": {
+    "vendor": "NORTHWIND ANALYTICS",
+    "invoiceNo": "NW-2026-0431",
+    "issueDate": "2026-03-14",
+    "dueDate": "2026-04-13",
+    "currency": "USD",
+    "subtotal": 720,
+    "tax": 61.2,
+    "total": 781.2,
+    "category": "Analytics Pro - Team plan",
+    "billable": true,
+    "lineItems": [
+      {
+        "description": "Analytics Pro - Team plan",
+        "quantity": 12,
+        "unitPrice": 49,
+        "amount": 588
+      },
+      {
+        "description": "Additional seats",
+        "quantity": 3,
+        "unitPrice": 19,
+        "amount": 57
+      },
+      {
+        "description": "Priority support",
+        "quantity": 1,
+        "unitPrice": 75,
+        "amount": 75
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 413,
+  "tokensOut": 295,
+  "durationMs": 41516,
+  "attempts": 1
+}

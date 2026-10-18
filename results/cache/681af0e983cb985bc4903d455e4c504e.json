@@ -1,0 +1,45 @@
+{
+  "value": {
+    "vendor": "TELIA MOBIL",
+    "invoiceNo": "RM-2026-330871",
+    "issueDate": "2026-03-01",
+    "dueDate": null,
+    "currency": "EUR",
+    "subtotal": 40.5,
+    "tax": 6.42,
+    "total": 46.92,
+    "category": null,
+    "billable": false,
+    "lineItems": [
+      {
+        "description": "Grundpreis (01.03.-31.03.)",
+        "quantity": null,
+        "unitPrice": 29.9,
+        "amount": null
+      },
+      {
+        "description": "Daten (12,4 GB)",
+        "quantity": null,
+        "unitPrice": 9.9,
+        "amount": null
+      },
+      {
+        "description": "Roaming EU",
+        "quantity": null,
+        "unitPrice": 4.2,
+        "amount": null
+      },
+      {
+        "description": "Gutschrift Vorperiode",
+        "quantity": null,
+        "unitPrice": null,
+        "amount": -3.5
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 363,
+  "tokensOut": 315,
+  "durationMs": 100973,
+  "attempts": 1
+}

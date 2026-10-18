@@ -1,0 +1,33 @@
+{
+  "value": {
+    "vendor": "Rivera Design Studio Ltd",
+    "invoiceNo": "MI-PI-88213",
+    "issueDate": "2026-02-20",
+    "dueDate": "2027-02-14",
+    "currency": "GBP",
+    "subtotal": 685.44,
+    "tax": 73.44,
+    "total": 685.44,
+    "category": "Professional Indemnity",
+    "billable": true,
+    "lineItems": [
+      {
+        "description": "Insurance Premium Tax (IPT)",
+        "quantity": null,
+        "unitPrice": null,
+        "amount": 73.44
+      },
+      {
+        "description": "Total Payable",
+        "quantity": null,
+        "unitPrice": null,
+        "amount": 685.44
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 345,
+  "tokensOut": 228,
+  "durationMs": 31355,
+  "attempts": 1
+}

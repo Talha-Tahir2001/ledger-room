@@ -1,0 +1,20 @@
+{
+  "value": {
+    "vendor": "K-ELECTRIC",
+    "invoiceNo": null,
+    "issueDate": "2026-01-01",
+    "dueDate": "2026-02-20",
+    "currency": "INR",
+    "subtotal": 21516,
+    "tax": null,
+    "total": null,
+    "category": "Residential",
+    "billable": null,
+    "lineItems": []
+  },
+  "raw": "",
+  "tokensIn": 316,
+  "tokensOut": 116,
+  "durationMs": 26471,
+  "attempts": 1
+}

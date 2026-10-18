@@ -1,0 +1,27 @@
+{
+  "value": {
+    "vendor": "Booking Confirmation",
+    "invoiceNo": "QK7ZP2",
+    "issueDate": "2026-04-08",
+    "dueDate": "2026-04-15",
+    "currency": "GBP",
+    "subtotal": 790.3,
+    "tax": 148.3,
+    "total": 790.3,
+    "category": "Flight Ticket",
+    "billable": true,
+    "lineItems": [
+      {
+        "description": "Seat 12A Reserved",
+        "quantity": 1,
+        "unitPrice": null,
+        "amount": 120
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 304,
+  "tokensOut": 183,
+  "durationMs": 29490,
+  "attempts": 1
+}

@@ -1,0 +1,39 @@
+{
+  "value": {
+    "vendor": "CIRRUS CLOUD",
+    "invoiceNo": "9931kd",
+    "issueDate": "2026-03-01",
+    "dueDate": "2026-02-28",
+    "currency": null,
+    "subtotal": 127.68,
+    "tax": 10.21,
+    "total": 137.89,
+    "category": "Compute (vCPU-hours)",
+    "billable": true,
+    "lineItems": [
+      {
+        "description": "Object storage (GB-month)",
+        "quantity": 840,
+        "unitPrice": 0.023,
+        "amount": 19.32
+      },
+      {
+        "description": "Egress (GB)",
+        "quantity": 410,
+        "unitPrice": 0.09,
+        "amount": 36.9
+      },
+      {
+        "description": "Managed database (instance-month)",
+        "quantity": 1,
+        "unitPrice": 49,
+        "amount": 49
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 391,
+  "tokensOut": 296,
+  "durationMs": 44348,
+  "attempts": 1
+}

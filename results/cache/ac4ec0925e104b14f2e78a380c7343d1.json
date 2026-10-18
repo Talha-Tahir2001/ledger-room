@@ -1,0 +1,33 @@
+{
+  "value": {
+    "vendor": "Holloway Domains",
+    "invoiceNo": "HD-2026-7734",
+    "issueDate": "2026-01-09",
+    "dueDate": "30 days prior",
+    "currency": "USD",
+    "subtotal": 96,
+    "tax": 0,
+    "total": 96,
+    "category": "Renewal reminders",
+    "billable": true,
+    "lineItems": [
+      {
+        "description": "ledgerline",
+        "quantity": 68,
+        "unitPrice": 68,
+        "amount": 68
+      },
+      {
+        "description": "studio-site",
+        "quantity": 28,
+        "unitPrice": 28,
+        "amount": 28
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 325,
+  "tokensOut": 235,
+  "durationMs": 33169,
+  "attempts": 1
+}

@@ -1,0 +1,45 @@
+{
+  "value": {
+    "vendor": "INKWELL PRINT SHOP",
+    "invoiceNo": "1P-8842",
+    "issueDate": "2026-03-07",
+    "dueDate": null,
+    "currency": "GBP",
+    "subtotal": 400,
+    "tax": 80,
+    "total": 480,
+    "category": "Business cards",
+    "billable": null,
+    "lineItems": [
+      {
+        "description": "Business cards - 500gsm",
+        "quantity": 250,
+        "unitPrice": 180,
+        "amount": null
+      },
+      {
+        "description": "Letterheads - A4",
+        "quantity": 200,
+        "unitPrice": 140,
+        "amount": null
+      },
+      {
+        "description": "Envelopes - C5",
+        "quantity": 100,
+        "unitPrice": 55,
+        "amount": null
+      },
+      {
+        "description": "Lamination",
+        "quantity": 50,
+        "unitPrice": 25,
+        "amount": null
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 348,
+  "tokensOut": 322,
+  "durationMs": 97402,
+  "attempts": 1
+}

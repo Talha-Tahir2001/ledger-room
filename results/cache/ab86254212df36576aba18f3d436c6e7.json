@@ -1,0 +1,33 @@
+{
+  "value": {
+    "vendor": "HOLLOWAY DOMAINS",
+    "invoiceNo": "HD-2026-7734",
+    "issueDate": "2026-01-09",
+    "dueDate": null,
+    "currency": "USD",
+    "subtotal": 96,
+    "tax": 0,
+    "total": 96,
+    "category": null,
+    "billable": null,
+    "lineItems": [
+      {
+        "description": "ledgerline",
+        "quantity": 1,
+        "unitPrice": 34,
+        "amount": 68
+      },
+      {
+        "description": "studio-site",
+        "quantity": 1,
+        "unitPrice": 14,
+        "amount": 28
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 327,
+  "tokensOut": 228,
+  "durationMs": 72083,
+  "attempts": 1
+}

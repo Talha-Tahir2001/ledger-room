@@ -1,0 +1,27 @@
+{
+  "value": {
+    "vendor": "IRONWORKS GYM",
+    "invoiceNo": null,
+    "issueDate": "2026-03-01",
+    "dueDate": null,
+    "currency": "EUR",
+    "subtotal": 39,
+    "tax": null,
+    "total": null,
+    "category": "Membership renewal",
+    "billable": null,
+    "lineItems": [
+      {
+        "description": "Monthly membership",
+        "quantity": 1,
+        "unitPrice": 39,
+        "amount": 39
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 261,
+  "tokensOut": 160,
+  "durationMs": 35088,
+  "attempts": 1
+}

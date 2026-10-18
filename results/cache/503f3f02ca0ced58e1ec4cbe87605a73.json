@@ -1,0 +1,20 @@
+{
+  "value": {
+    "vendor": null,
+    "invoiceNo": null,
+    "issueDate": null,
+    "dueDate": null,
+    "currency": "GBP",
+    "subtotal": 642,
+    "tax": 148.3,
+    "total": 790.3,
+    "category": null,
+    "billable": null,
+    "lineItems": []
+  },
+  "raw": "",
+  "tokensIn": 306,
+  "tokensOut": 107,
+  "durationMs": 30678,
+  "attempts": 1
+}

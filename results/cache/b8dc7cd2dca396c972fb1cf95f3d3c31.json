@@ -1,0 +1,33 @@
+{
+  "value": {
+    "vendor": "K-ELECTRIC",
+    "invoiceNo": "4110229837",
+    "issueDate": "2026-01-01",
+    "dueDate": "2026-02-20",
+    "currency": "INR",
+    "subtotal": 21516,
+    "tax": null,
+    "total": 21516,
+    "category": "Residential",
+    "billable": true,
+    "lineItems": [
+      {
+        "description": "Units Consumed",
+        "quantity": 978,
+        "unitPrice": null,
+        "amount": 21516
+      },
+      {
+        "description": "Tariff Category",
+        "quantity": null,
+        "unitPrice": null,
+        "amount": null
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 314,
+  "tokensOut": 228,
+  "durationMs": 34313,
+  "attempts": 1
+}

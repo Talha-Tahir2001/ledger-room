@@ -1,0 +1,20 @@
+{
+  "value": {
+    "vendor": "MERIDIAN INSURANCE",
+    "invoiceNo": null,
+    "issueDate": "2026-01-20",
+    "dueDate": null,
+    "currency": "GBP",
+    "subtotal": 685.44,
+    "tax": 73.44,
+    "total": 685.44,
+    "category": "Professional Indemnity",
+    "billable": null,
+    "lineItems": []
+  },
+  "raw": "",
+  "tokensIn": 347,
+  "tokensOut": 120,
+  "durationMs": 45899,
+  "attempts": 1
+}

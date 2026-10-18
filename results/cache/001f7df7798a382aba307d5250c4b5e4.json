@@ -1,0 +1,33 @@
+{
+  "value": {
+    "vendor": "BLUE BOTTLE",
+    "invoiceNo": null,
+    "issueDate": "2026-02-11",
+    "dueDate": null,
+    "currency": null,
+    "subtotal": 9.75,
+    "tax": null,
+    "total": 9.75,
+    "category": "Coffee",
+    "billable": true,
+    "lineItems": [
+      {
+        "description": "1x Drip coffee",
+        "quantity": 1,
+        "unitPrice": 4.25,
+        "amount": 4.25
+      },
+      {
+        "description": "1x Almond croissant",
+        "quantity": 1,
+        "unitPrice": 5.5,
+        "amount": 5.5
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 243,
+  "tokensOut": 205,
+  "durationMs": 28609,
+  "attempts": 1
+}

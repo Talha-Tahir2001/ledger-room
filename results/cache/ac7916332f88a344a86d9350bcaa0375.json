@@ -1,0 +1,20 @@
+{
+  "value": {
+    "vendor": "MARGUERITE FONTAINE Design Consultancy",
+    "invoiceNo": "MF-2026-0088",
+    "issueDate": "2026-05-06",
+    "dueDate": "2026-06-05",
+    "currency": "EUR",
+    "subtotal": 3200,
+    "tax": null,
+    "total": 3478.4,
+    "category": "Fees",
+    "billable": null,
+    "lineItems": []
+  },
+  "raw": "",
+  "tokensIn": 365,
+  "tokensOut": 144,
+  "durationMs": 46276,
+  "attempts": 1
+}
