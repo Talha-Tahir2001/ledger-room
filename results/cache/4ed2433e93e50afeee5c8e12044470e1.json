@@ -1,0 +1,39 @@
+{
+  "value": {
+    "vendor": "HARLAN & CO LLP",
+    "invoiceNo": "HC-2026-0219",
+    "issueDate": "2026-03-02",
+    "dueDate": null,
+    "currency": "USD",
+    "subtotal": null,
+    "tax": null,
+    "total": 3188.5,
+    "category": null,
+    "billable": null,
+    "lineItems": [
+      {
+        "description": "Contract review, 4 hours",
+        "quantity": null,
+        "unitPrice": null,
+        "amount": 1800
+      },
+      {
+        "description": "Trademark filing (govt. fee)",
+        "quantity": null,
+        "unitPrice": null,
+        "amount": 450
+      },
+      {
+        "description": "Courier",
+        "quantity": null,
+        "unitPrice": 38.5,
+        "amount": 38.5
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 335,
+  "tokensOut": 260,
+  "durationMs": 66902,
+  "attempts": 1
+}

@@ -58,10 +58,7 @@ export function UploadDropzone() {
   const runningRef = React.useRef(false)
   const inputRef = React.useRef<HTMLInputElement>(null)
 
-  const runtimeKind = activeRuntime(runtime)
-  // Hoisted out of the queue loop so the batch callback does not depend on a
-  // nullable chain that only changes when the user presses Re-check.
-  const localTransport = runtime.localProbe?.transport ?? "direct"
+const runtimeKind = activeRuntime(runtime)
 
   const patch = React.useCallback((id: string, changes: Partial<QueueItem>) => {
     setItems((current) =>
@@ -119,17 +116,10 @@ export function UploadDropzone() {
                   onStage: (stage, ratio) => patch(item.id, { stage, progress: ratio }),
                 })
               )
-            : await traced(
-                "extract.local",
-                item.file.name,
-                () =>
-                  processWithLocal(
-                    item.file,
-                    item.id,
-                    { onStage: (stage, ratio) => patch(item.id, { stage, progress: ratio }) },
-                    localTransport
-                  ),
-                { runtime: "local", transport: localTransport }
+            : await traced("extract.local", item.file.name, () =>
+                processWithLocal(item.file, item.id, {
+                  onStage: (stage, ratio) => patch(item.id, { stage, progress: ratio }),
+                })
               )
 
         addInvoices([outcome.invoice])
@@ -154,7 +144,7 @@ export function UploadDropzone() {
 
     runningRef.current = false
     setRunning(false)
-  }, [items, runtimeKind, localTransport, addInvoices, patch])
+  }, [items, runtimeKind, addInvoices, patch])
 
   const loadDemo = React.useCallback(() => {
     replaceRuntime(

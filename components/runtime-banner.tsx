@@ -25,8 +25,6 @@ export function RuntimeBanner({ compact = false }: { compact?: boolean }) {
   }
 
   if (runtime.state === "local") {
-    const viaProxy = runtime.localProbe?.transport === "dev-proxy"
-
     return (
       <BannerShell
         tone="good"
@@ -46,19 +44,9 @@ export function RuntimeBanner({ compact = false }: { compact?: boolean }) {
         }
       >
         Nothing leaves your device. Documents are read in this tab, extracted by
-        {` ${runtime.localModel} `}on {runtime.localUrl}, and never written to disk.
-        {viaProxy && (
-          <>
-            {" "}
-            <strong className="font-medium text-foreground">
-              This development build is routing through a same-origin route handler
-            </strong>{" "}
-            because Chrome blocks direct private-network requests unless the target opts
-            in, and Ollama does not send that header. The model still runs on this machine
-            and the document still reaches no server — but the direct tab-to-Ollama path is
-            what the deployed app uses.
-          </>
-        )}
+        {` ${runtime.localModel} `}on {runtime.localUrl}, and never written to disk. This
+        request goes straight from your browser to your own machine and is never proxied
+        through a server.
       </BannerShell>
     )
   }
@@ -149,20 +137,17 @@ export function RuntimeBanner({ compact = false }: { compact?: boolean }) {
       </strong>{" "}
       What you see is the pre-computed results for the fixture set — real model output,
       recorded once, not live inference. Review, correction and export all work normally.
-      {!compact && runtime.localProbe && runtime.localProbe.failure !== "unreachable" && (
-        <>
-          {" "}
-          <span className="block pt-1">{runtime.localProbe.detail}</span>
-        </>
+      {!compact && runtime.localProbe?.failure && (
+        <span className="block pt-1">{runtime.localProbe.detail}</span>
       )}
       {!compact && (
         <>
           <span className="block pt-1">
             To run extraction for real, install Ollama and pull{" "}
             <code className="font-mono">{runtime.localModel}</code>, then press Re-check. If
-            Ollama is already running and this still says no, the browser is refusing the
-            request: set <code className="font-mono">OLLAMA_ORIGINS</code> to include this
-            page&rsquo;s origin and restart Ollama.
+            Ollama is already running and this still says no, the browser refused the request:
+            check that <code className="font-mono">OLLAMA_ORIGINS</code> includes this
+            page&rsquo;s origin, and restart Ollama after changing it.
           </span>
         </>
       )}

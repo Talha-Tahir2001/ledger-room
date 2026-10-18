@@ -1,0 +1,39 @@
+{
+  "value": {
+    "vendor": "THE WORKS LONDON",
+    "invoiceNo": "TWL-2026-0912",
+    "issueDate": "2026-04-03",
+    "dueDate": "2026-05-03",
+    "currency": "GBP",
+    "subtotal": 495,
+    "tax": 99,
+    "total": 594,
+    "category": "Membership Invoice",
+    "billable": null,
+    "lineItems": [
+      {
+        "description": "Hot desk - April",
+        "quantity": null,
+        "unitPrice": 320,
+        "amount": 320
+      },
+      {
+        "description": "Meeting room credits (10 hrs)",
+        "quantity": null,
+        "unitPrice": 150,
+        "amount": 150
+      },
+      {
+        "description": "Locker rental",
+        "quantity": null,
+        "unitPrice": 25,
+        "amount": 25
+      }
+    ]
+  },
+  "raw": "",
+  "tokensIn": 335,
+  "tokensOut": 293,
+  "durationMs": 79045,
+  "attempts": 1
+}
