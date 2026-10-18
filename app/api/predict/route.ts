@@ -15,6 +15,7 @@ import { NextResponse } from "next/server"
 
 import {
   buildDataset,
+  hashClient,
   meanAbsoluteError,
   parseHistory,
   type FeatureRow,
@@ -103,9 +104,15 @@ export async function POST(request: Request) {
         (row) => row.daysToPayment !== null && trainIds.has(row.invoiceNo)
       )
 
+      // Per-client history is keyed by the hash of the *training* row's client
+      // name, because that is what the test rows carry. Looking a training
+      // row's invoiceNo up in the test set — which is what this did originally
+      // — never matches, leaves the map empty, and silently reports the global
+      // mean as though it were the client mean. That understates the baseline
+      // the model has to beat, which flatters the model.
       const perClient = new Map<string, number[]>()
       for (const row of seen) {
-        const key = test.find((t) => t.invoiceNo === row.invoiceNo)?.clientHash
+        const key = hashClient(row.client)
         if (!key) continue
         const list = perClient.get(key) ?? []
         list.push(row.daysToPayment as number)
